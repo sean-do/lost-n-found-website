@@ -1,0 +1,24 @@
+@use 'variables' as v;
+
+.container {
+	display: flex;
+	width: minmax(100%, 1200px);
+	height: 100svh;
+	> * {
+		overflow-y: scroll;
+		padding: v.$s-s;
+	}
+	> .container__item--w-20 {
+		width: 20%;
+	}
+	> .container__item--w-40 {
+		width: 40%;
+	}
+}
+
+.article-link {
+	display: flex;
+	> .article-link__number {
+		padding-right: v.$s-s;
+	}
+}

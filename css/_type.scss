@@ -1,0 +1,65 @@
+@use 'variables' as v;
+@use 'fonts';
+
+// TYPE UTILITIES
+@mixin text-center {
+	text-align: center;
+}
+
+// TYPE CLASSES
+body {
+	font: 400 v.$fs-m fonts.$serif;
+	color: v.$cl-red;
+	letter-spacing: -0.03em;
+	line-height: 1.2;
+}
+
+.text-heading {
+	font: 700 v.$fs-xl fonts.$sans;
+	line-height: 0.9;
+	-webkit-text-stroke: 7px v.$cl-red;
+	@include text-center;
+}
+
+.text-subheading {
+	font: 400 v.$fs-s fonts.$sans;
+}
+
+.text-body {
+	font: 400 v.$fs-m fonts.$serif;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	word-spacing: -0.08em;
+}
+
+.text-body-s {
+	font-size: v.$fs-s;
+}
+
+// rounded border text
+
+@mixin text-outline($fill: v.$cl-red, $stroke: v.$cl-yellow, $width: 10px) {
+	fill: $fill;
+	stroke: $stroke;
+	stroke-width: $width;
+	stroke-linejoin: round;
+	paint-order: stroke fill;
+}
+
+svg {
+	// font: 700 v.$fs-m fonts.$serif;
+	display: inline-block;
+	width: 100%;
+	height: 1em;
+	overflow: visible;
+	text {
+		@include text-outline(v.$cl-red, v.$cl-yellow, 10px);
+	}
+	&.text-heading text {
+		@include text-outline(v.$cl-yellow, v.$cl-yellow, 6px);
+	}
+
+	&.text-subheading text {
+		@include text-outline(v.$cl-red, v.$cl-yellow, 12px);
+	}
+}
