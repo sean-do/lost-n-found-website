@@ -1,24 +1,103 @@
-@use 'variables' as v;
+@use "variables" as v;
+@use "utilities" as u;
 
-.container {
-	display: flex;
-	width: minmax(100%, 1200px);
-	height: 100svh;
-	> * {
-		overflow-y: scroll;
-		padding: v.$s-s;
-	}
-	> .container__item--w-20 {
-		width: 20%;
-	}
-	> .container__item--w-40 {
-		width: 40%;
-	}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
 }
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+// PAGE CONTAINER
+.container {
+  @include u.flex();
+  background-color: v.$cl-light;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  // children
+  .container__item {
+    position: relative;
+    overflow-y: scroll;
+    padding: v.$s-s;
+    z-index: 1;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &.container__item--w-20 {
+      width: 30%;
+    }
+    &.container__item--w-40 {
+      width: 40%;
+    }
+    &.container__item--w-80 {
+      width: 80%;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+// GRADIENT BORDER
+.container .container__divider {
+  // turn 8rem into variable later
+  flex: 0 0 6rem;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  --gradient: #{v.$gradient};
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient);
+  }
+  // &.container__divider--light-yellow-red {
+  //   --gradient: #{v.$gradient-light-yellow-red};
+  // }
+  // &.container__divider--red-orange-yellow {
+  //   --gradient: #{v.$gradient-red-orange-yellow};
+  // }
+}
+
+// NAV CONTAINER
+.container-nav {
+  @include u.flex(column, v.$s-m);
+}
+
+.container-logo {
+  @include u.flex(column, v.$s-xs);
+}
+
+.container-links {
+  @include u.flex(column, v.$s-m);
+  &__link {
+    @include u.flex(row, v.$s-s);
+    &__name {
+      @include u.flex(column, v.$s-xxs);
+    }
+  }
+}
+
+// ARTICLE LINK
 .article-link {
-	display: flex;
-	> .article-link__number {
-		padding-right: v.$s-s;
-	}
+  display: flex;
+  > .article-link__number {
+    padding-right: v.$s-s;
+  }
+  // .article-link
+}
+
+a {
+  // transition: font-weight 200ms ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  // color: v.$cl-yellow;
+  font-weight: bold;
 }

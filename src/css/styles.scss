@@ -1,11 +1,14 @@
-@use 'fonts';
-@use 'reset';
+@use "fonts";
+@use "reset";
 
 // GRID
-@use 'grid';
+@use "grid";
 
 // TYPOGRAPHY
-@use 'type';
+@use "type";
 
 // COMPONENTS
-@use 'components';
+@use "components";
+
+// UTILITIES
+@use "utilities";

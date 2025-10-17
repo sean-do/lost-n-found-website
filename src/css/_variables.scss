@@ -1,11 +1,14 @@
 // spacing
+$s-xxs: 0.25rem;
 $s-xs: 0.5rem;
 $s-s: 1rem;
 $s-m: 2rem;
+$s-l: 4rem;
+$s-xl: 6rem;
 
 // font-size
 $fs-s: 1.5rem;
-$fs-m: 2rem;
+$fs-m: 1.75rem;
 $fs-xl: 5rem;
 
 // line-height
@@ -14,6 +17,33 @@ $fs-xl: 5rem;
 // $text-outline-s-red: 2px solid
 
 // colours
-$cl-red: #fa3c4f;
+$cl-light: hsl(53, 60%, 91%);
+$cl-red: hsl(354, 100%, 55%);
 $cl-yellow: #ffe600;
 $cl-orange: #de5626;
+
+// gradient
+$gradient: linear-gradient(
+  90deg,
+  $cl-light 0%,
+  hsl(54, 100%, 85%) 35%,
+  $cl-yellow 50%,
+  hsl(54, 100%, 85%) 75%,
+  $cl-light 100%
+);
+
+// hsl(53, 90%, 90%) 30%,
+// hsl(54, 100%, 65%) 50%,
+// hsl(53, 90%, 90%) 70%,
+$gradient-light-yellow-red: linear-gradient(
+  90deg,
+  $cl-light 0%,
+  $cl-yellow 50%,
+  $cl-red 100%
+);
+$gradient-red-orange-yellow: linear-gradient(
+  90deg,
+  $cl-red 0%,
+  $cl-orange 50%,
+  $cl-yellow 100%
+);

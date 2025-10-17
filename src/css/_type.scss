@@ -1,65 +1,82 @@
-@use 'variables' as v;
-@use 'fonts';
+@use "variables" as v;
+@use "fonts";
 
 // TYPE UTILITIES
 @mixin text-center {
-	text-align: center;
+  text-align: center;
 }
 
 // TYPE CLASSES
 body {
-	font: 400 v.$fs-m fonts.$serif;
-	color: v.$cl-red;
-	letter-spacing: -0.03em;
-	line-height: 1.2;
+  font: 400 v.$fs-m fonts.$serif;
+  color: v.$cl-red;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 
 .text-heading {
-	font: 700 v.$fs-xl fonts.$sans;
-	line-height: 0.9;
-	-webkit-text-stroke: 7px v.$cl-red;
-	@include text-center;
+  font: 700 v.$fs-xl fonts.$sans;
+  line-height: 0.9;
+  -webkit-text-stroke: 7px v.$cl-red;
+  @include text-center;
 }
 
-.text-subheading {
-	font: 400 v.$fs-s fonts.$sans;
+.text-body-sans {
+  font: 400 v.$fs-s fonts.$sans;
+  line-height: 1.1;
+  //   text-align: justify;
 }
 
 .text-body {
-	font: 400 v.$fs-m fonts.$serif;
-	line-height: 1.2;
-	letter-spacing: -0.03em;
-	word-spacing: -0.08em;
+  // font: 400 v.$fs-m fonts.$serif;
+  // line-height: 1.1;
+  // letter-spacing: -0.03em;
+  word-spacing: -0.08em;
+  & p:not(:first-child) {
+    text-indent: v.$s-l;
+  }
 }
 
 .text-body-s {
-	font-size: v.$fs-s;
+  font-size: v.$fs-s;
+}
+
+.text-subheading {
+  @extend .text-body;
+  font-weight: 700;
+}
+
+.text-intro {
+  font: 700 v.$fs-m fonts.$serif-normal;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin-bottom: v.$s-xl;
 }
 
 // rounded border text
 
 @mixin text-outline($fill: v.$cl-red, $stroke: v.$cl-yellow, $width: 10px) {
-	fill: $fill;
-	stroke: $stroke;
-	stroke-width: $width;
-	stroke-linejoin: round;
-	paint-order: stroke fill;
+  fill: $fill;
+  stroke: $stroke;
+  stroke-width: $width;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
 }
 
 svg {
-	// font: 700 v.$fs-m fonts.$serif;
-	display: inline-block;
-	width: 100%;
-	height: 1em;
-	overflow: visible;
-	text {
-		@include text-outline(v.$cl-red, v.$cl-yellow, 10px);
-	}
-	&.text-heading text {
-		@include text-outline(v.$cl-yellow, v.$cl-yellow, 6px);
-	}
+  // font: 700 v.$fs-m fonts.$serif;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  overflow: visible;
+  text {
+    @include text-outline(v.$cl-yellow, v.$cl-red, 10px);
+  }
+  &.text-heading text {
+    @include text-outline(v.$cl-red, v.$cl-red, 6px);
+  }
 
-	&.text-subheading text {
-		@include text-outline(v.$cl-red, v.$cl-yellow, 12px);
-	}
+  &.text-subheading text {
+    @include text-outline(v.$cl-red, v.$cl-yellow, 12px);
+  }
 }

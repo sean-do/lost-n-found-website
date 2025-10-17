@@ -1,0 +1,29 @@
+<div class="container-nav">
+  <div class="container-logo">
+    <img src="assets/images/logo-animated.gif" alt="lost n found logo" />
+    <p class="text-body-sans">
+      is a safe space to share and read stories, to connect people that lived
+      and/or living between cultures, and to celebrate cultural diversity.
+    </p>
+  </div>
+
+  <nav>
+    <ul class="container-links">
+      {%- for story in collections.post -%}
+        <a>
+          <li class="container-links__link">
+            <div class="article-link__number">
+              {{ "0" + loop.index if loop.index < 10 else loop.index }}
+            </div>
+            <div class="container-links__link">
+              <div class="container-links__link__name">
+                <div>{{ story.data.title | safe }}</div>
+                <div class="text-body-s">{{ story.data.author }}</div>
+              </div>
+            </div>
+          </li>
+        </a>
+      {%- endfor %}
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,15 @@
+@use "variables" as v;
+
+.bg-red {
+  background-color: v.$cl-red;
+}
+
+.bg-yellow {
+  background-color: v.$cl-yellow;
+}
+
+@mixin flex($direction: row, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
