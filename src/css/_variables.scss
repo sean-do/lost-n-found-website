@@ -1,3 +1,10 @@
+:root {
+  --cl-light: hsl(53, 60%, 90%);
+  --cl-red: hsl(7, 80%, 55%);
+  --cl-yellow: #ffe600;
+  --cl-orange: #de5626;
+}
+
 // spacing
 $s-xxs: 0.25rem;
 $s-xs: 0.5rem;
@@ -6,10 +13,11 @@ $s-m: 2rem;
 $s-l: 4rem;
 $s-xl: 6rem;
 
-// font-size
-$fs-s: 1.5rem;
-$fs-m: 1.75rem;
-$fs-xl: 5rem;
+// font-size-serif
+$fs-caption: 0.875rem;
+$fs-body: 1.75rem;
+$fs-body-large: 2.75rem;
+$fs-heading: 5rem;
 
 // line-height
 
@@ -17,10 +25,11 @@ $fs-xl: 5rem;
 // $text-outline-s-red: 2px solid
 
 // colours
-$cl-light: hsl(53, 60%, 91%);
-$cl-red: hsl(354, 100%, 55%);
-$cl-yellow: #ffe600;
-$cl-orange: #de5626;
+$cl-light: var(--cl-light);
+// $cl-red: hsl(354, 98%, 55%);
+$cl-red: var(--cl-red);
+$cl-yellow: var(--cl-yellow);
+$cl-orange: var(--cl-orange);
 
 // gradient
 $gradient: linear-gradient(

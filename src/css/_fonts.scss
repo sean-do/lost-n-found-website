@@ -1,10 +1,10 @@
 $serif: "Kommuna Narrow", serif;
-$serif-normal: "Kommuna", serif;
+$serif-normal: "Kommuna", monospace;
 $sans: "Authentic Sans Condensed", sans-serif;
 
 @font-face {
   font-family: "Kommuna Narrow";
-  src: url("../assets/fonts/Kommuna-Narrow.woff2") format("woff2");
+  src: url("/assets/fonts/Kommuna-Narrow.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@ $sans: "Authentic Sans Condensed", sans-serif;
 
 @font-face {
   font-family: "Kommuna Narrow";
-  src: url("../assets/fonts/Kommuna-NarrowBold.woff2") format("woff2");
+  src: url("/assets/fonts/Kommuna-NarrowBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@ $sans: "Authentic Sans Condensed", sans-serif;
 
 @font-face {
   font-family: "Kommuna Narrow";
-  src: url("../assets/fonts/Kommuna-NarrowBlack") format("woff2");
+  src: url("/assets/fonts/Kommuna-NarrowBlack.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -28,15 +28,15 @@ $sans: "Authentic Sans Condensed", sans-serif;
 
 @font-face {
   font-family: "Kommuna";
-  src: url("../assets/fonts/Kommuna-Normal.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/assets/fonts/Kommuna-Normal.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Kommuna";
-  src: url("../assets/fonts/Kommuna-NormalBold.woff2") format("woff2");
+  src: url("/assets/fonts/Kommuna-NormalBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -44,7 +44,7 @@ $sans: "Authentic Sans Condensed", sans-serif;
 
 @font-face {
   font-family: "Kommuna";
-  src: url("../assets/fonts/Kommuna-NormalBlack.woff2") format("woff2");
+  src: url("/assets/fonts/Kommuna-NormalBlack.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -52,16 +52,24 @@ $sans: "Authentic Sans Condensed", sans-serif;
 
 @font-face {
   font-family: "Authentic Sans Condensed";
-  src: url("../assets/fonts/authentic-sans-condensed-90.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/assets/fonts/authentic-sans-condensed-90.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Authentic Sans Condensed";
-  src: url("../assets/fonts/authentic-sans-condensed-150.woff2") format("woff2");
+  src: url("/assets/fonts/authentic-sans-condensed-130.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Authentic Sans Condensed";
+  src: url("/assets/fonts/authentic-sans-condensed-150.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

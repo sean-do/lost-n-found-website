@@ -1,21 +1,23 @@
 {
-	"name": "website",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "eleventy --serve",
-		"build": "eleventy"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@11ty/eleventy": "^3.1.2",
-		"prettier": "^3.6.2",
-		"prettier-plugin-jinja-template": "^2.1.0"
-	},
-	"dependencies": {
-		"nunjucks": "^3.2.4"
-	}
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-jinja-template": "^2.1.0"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "nunjucks": "^3.2.4"
+  },
+  "type": "module"
 }

@@ -8,75 +8,92 @@
 
 // TYPE CLASSES
 body {
-  font: 400 v.$fs-m fonts.$serif;
+  font: 500 v.$fs-body fonts.$serif;
   color: v.$cl-red;
   letter-spacing: -0.03em;
+  word-spacing: -0.08em;
   line-height: 1.1;
 }
 
 .text-heading {
-  font: 700 v.$fs-xl fonts.$sans;
+  font: 900 v.$fs-heading fonts.$sans;
   line-height: 0.9;
-  -webkit-text-stroke: 7px v.$cl-red;
+  letter-spacing: -0.02em;
+  word-spacing: normal;
   @include text-center;
+  -webkit-text-stroke: 0.02em v.$cl-red;
+  margin-top: 0.1em;
+  filter: url(#rounded);
 }
 
 .text-body-sans {
-  font: 400 v.$fs-s fonts.$sans;
+  font: 500 v.$fs-body fonts.$sans;
   line-height: 1.1;
-  //   text-align: justify;
+  word-spacing: normal;
 }
 
 .text-body {
-  // font: 400 v.$fs-m fonts.$serif;
-  // line-height: 1.1;
-  // letter-spacing: -0.03em;
-  word-spacing: -0.08em;
-  & p:not(:first-child) {
-    text-indent: v.$s-l;
+  text-indent: v.$s-l;
+  // reset indent for first paragraph, questions & paragraph right after question
+  & p:first-child,
+  & .text-question,
+  .text-question + p {
+    text-indent: 0;
+  }
+  // margin for q&a body
+  &--qa p:not(.text-question) {
+    margin-left: v.$s-xl;
   }
 }
 
-.text-body-s {
-  font-size: v.$fs-s;
+.text-question {
+  font: 500 v.$fs-body fonts.$sans;
+  word-spacing: normal;
+  margin-bottom: v.$s-s;
+  &:not(:first-child) {
+    margin-top: v.$s-m;
+  }
+}
+
+.text-caption {
+  font: 500 v.$fs-caption fonts.$serif-normal;
+  // word-spacing: -0.05em;
+  // font-size: v.$fs-caption;
 }
 
 .text-subheading {
   @extend .text-body;
+  letter-spacing: -0.01em;
   font-weight: 700;
 }
 
 .text-intro {
-  font: 700 v.$fs-m fonts.$serif-normal;
+  font: 500 v.$fs-body-large fonts.$sans;
   line-height: 1.05;
-  letter-spacing: -0.05em;
-  margin-bottom: v.$s-xl;
+  letter-spacing: -0.03em;
+  word-spacing: normal;
+  margin-bottom: v.$s-m;
+}
+
+.text-highlight-red {
+  font-weight: 900;
+  letter-spacing: normal;
 }
 
 // rounded border text
-
-@mixin text-outline($fill: v.$cl-red, $stroke: v.$cl-yellow, $width: 10px) {
-  fill: $fill;
-  stroke: $stroke;
-  stroke-width: $width;
-  stroke-linejoin: round;
-  paint-order: stroke fill;
-}
-
 svg {
-  // font: 700 v.$fs-m fonts.$serif;
   display: inline-block;
   height: 1em;
   width: 100%;
   overflow: visible;
-  text {
-    @include text-outline(v.$cl-yellow, v.$cl-red, 10px);
+  & .text-highlight-stroke {
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke: v.$cl-yellow;
+    fill: none;
   }
-  &.text-heading text {
-    @include text-outline(v.$cl-red, v.$cl-red, 6px);
-  }
-
-  &.text-subheading text {
-    @include text-outline(v.$cl-red, v.$cl-yellow, 12px);
+  & .text-highlight-fill {
+    fill: v.$cl-orange;
+    stroke: none;
   }
 }

@@ -1,29 +1,57 @@
 <div class="container-nav">
   <div class="container-logo">
-    <img src="assets/images/logo-animated.gif" alt="lost n found logo" />
+    <img
+      id="logo"
+      src="/assets/images/logo-animated.gif"
+      alt="lost n found logo"
+    />
     <p class="text-body-sans">
       is a safe space to share and read stories, to connect people that lived
       and/or living between cultures, and to celebrate cultural diversity.
     </p>
   </div>
 
-  <nav>
+  <nav class="container-nav">
     <ul class="container-links">
+      <a href="/stories/jen" class="active">
+        {% highlight "Read" %}
+        {# <svg
+          class="text-subheading"
+          style="vertical-align: baseline; height: 0.5em; width: 4ch"
+        >
+          <defs>
+            <text id="about-link" x="50%" y="100%" text-anchor="middle">
+              Read
+            </text>
+          </defs>
+          <use href="#about-link" class="text-highlight-stroke" />
+          <use href="#about-link" class="text-highlight-fill" />
+        </svg> #}
+      </a>
+      /
+      <a href="/about">{% highlight "About" %}</a>
+      /
+      <a href="/contribute">{% highlight "Contribute" %}</a>
+    </ul>
+    <ul class="container-article-links">
       {%- for story in collections.post -%}
-        <a>
-          <li class="container-links__link">
+        <li>
+          <a
+            class="container-article-links__link {% if page.url === story.url %}active{% endif %}"
+            href="{{ story.url | url }}"
+          >
             <div class="article-link__number">
               {{ "0" + loop.index if loop.index < 10 else loop.index }}
             </div>
-            <div class="container-links__link">
-              <div class="container-links__link__name">
-                <div>{{ story.data.title | safe }}</div>
-                <div class="text-body-s">{{ story.data.author }}</div>
+            <div class="container-article-links__link">
+              <div class="container-article-links__link__name">
+                <div>{{ story.data.title | fixRunt | safe }}</div>
+                <div>({{ story.data.author }})</div>
               </div>
             </div>
-          </li>
-        </a>
-      {%- endfor %}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </div>

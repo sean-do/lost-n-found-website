@@ -8,8 +8,26 @@
   background-color: v.$cl-yellow;
 }
 
-@mixin flex($direction: row, $gap: 0) {
+@mixin flex(
+  $direction: row,
+  $gap: 0,
+  $justify-content: start,
+  $align-items: stretch
+) {
   display: flex;
   flex-direction: $direction;
   gap: $gap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+.grayscale {
+  --cl-red: #3a3a3a;
+  --cl-light: white;
+  --cl-yellow: #eaeaea;
+  --cl-orange: #3a3a3a;
+  img,
+  video {
+    filter: grayscale(100%) brightness(0.8) contrast(2);
+  }
 }
