@@ -4,6 +4,11 @@ author: Kenneth Toh
 type: qa
 intro: Ken shares about his journey navigating a new culture as a Singaporean.
 image: /assets/images/ken/ken.png
+images:
+  - src: /assets/images/ken/ken-nusantao.png
+    caption: "Ken at his Nusantao pop-up"
+  - src: /assets/images/ken/gai-wong.png
+    caption: "Hainanese Chicken Rice at Gai Wong"
 ---
 
 {% question "Has there been a time in your life when you felt disconnected to your heritage culture?" %}

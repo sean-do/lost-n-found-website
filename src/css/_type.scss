@@ -9,12 +9,12 @@
 
 // TYPE CLASSES
 body {
+  background: var(--cl-bg);
   font: 500 var(--fs-body) fonts.$serif;
-  color: v.$cl-red;
+  color: var(--cl-text-body);
   letter-spacing: -0.03em;
   word-spacing: -0.1em;
   line-height: 1.1;
-  background-color: var(--cl-bg);
 }
 
 .text-display {
@@ -23,7 +23,7 @@ body {
   letter-spacing: -0.02em;
   word-spacing: normal;
   @include text-center;
-  -webkit-text-stroke: 0.02em v.$cl-red;
+  -webkit-text-stroke: 0.02em var(--cl-text-body);
   margin-top: 0.1em;
   filter: url(#rounded);
 }
@@ -126,11 +126,11 @@ svg {
   .text-highlight-stroke {
     stroke-width: 0.35em;
     stroke-linejoin: round;
-    stroke: v.$cl-yellow;
+    stroke: var(--cl-stroke);
     fill: none;
   }
   .text-highlight-fill {
-    fill: v.$cl-orange;
+    fill: var(--cl-text-highlight);
     stroke: none;
   }
 }

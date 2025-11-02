@@ -16,7 +16,7 @@
   transition: background-color 400ms ease;
 
   &:hover {
-    background-color: var(--cl-yellow);
+    background-color: var(--cl-stroke);
     font-weight: 900;
   }
 }
@@ -35,5 +35,14 @@
     display: block;
     height: 60px;
     width: auto;
+  }
+}
+
+.colour-toggle__button {
+  img {
+    transition: filter 0.1s ease;
+  }
+  &.toggle-grayscale:hover img {
+    filter: grayscale(100%) brightness(0.8) contrast(2);
   }
 }

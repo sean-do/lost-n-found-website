@@ -13,18 +13,18 @@
   textarea {
     outline: none;
     background: transparent;
-    border: 2px dotted var(--cl-red);
+    border: 2px dotted var(--cl-text-body);
     border-radius: 0.25em;
     padding: var(--pd-btn);
     @extend .text-caption;
-    color: var(--cl-orange);
+    color: var(--cl-text-highlight);
     font-weight: 700;
     transition: outline 20ms;
 
     &:focus {
       border-style: solid;
-      border-color: var(--cl-orange);
-      outline: 5px solid var(--cl-yellow);
+      border-color: var(--cl-text-highlight);
+      outline: 5px solid var(--cl-stroke);
     }
   }
 
@@ -91,7 +91,7 @@
       opacity 0.2s ease,
       margin-top 0.2s ease;
     &::placeholder {
-      color: var(--cl-red);
+      color: var(--cl-text-body);
       opacity: 0.7;
       font-weight: normal;
     }
@@ -102,6 +102,6 @@
     opacity: 1;
     max-height: 5em;
     padding: var(--pd-btn);
-    border: 2px dotted var(--cl-red);
+    border: 2px dotted var(--cl-text-body);
   }
 }

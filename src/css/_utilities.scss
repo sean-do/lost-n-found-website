@@ -1,11 +1,11 @@
 @use "variables" as v;
 
 .bg-red {
-  background-color: v.$cl-red;
+  background-color: var(--cl-text-body);
 }
 
 .bg-yellow {
-  background-color: v.$cl-yellow;
+  background-color: var(--cl-stroke);
 }
 
 @mixin flex(
@@ -21,15 +21,27 @@
   align-items: $align-items;
 }
 
-.grayscale {
-  --cl-red: #3a3a3a;
-  --cl-light: white;
-  --cl-yellow: #eaeaea;
-  --cl-orange: #3a3a3a;
+body {
+  transition:
+    filter 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+html.grayscale body {
   --cl-text-body: #3a3a3a;
+  --cl-bg: white;
+  --cl-stroke: #eaeaea;
+  --cl-text-highlight: #3a3a3a;
   img,
   video {
     filter: grayscale(100%) brightness(0.8) contrast(2);
+  }
+
+  .colour-toggle__button {
+    &.toggle-colour:hover img {
+      filter: none;
+    }
   }
 }
 

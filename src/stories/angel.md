@@ -4,10 +4,10 @@ author: Angel Leung
 intro: Angel talks about her experience with the muted celebration of Lunar New Year in Melbourne and how she stays connected to her heritage culture through simple rituals.
 image: /assets/images/angel/angel.png
 images:
-  - src: /assets/images/jen/newyear.jpg
+  - src: /assets/images/angel/hong-kong.png
     caption: "Lunar New Year in Hong Kong"
-  - src: /assets/images/jen/newyear.jpg
-    caption: "Lunar New Year in Hong Kong"
+  - src: /assets/images/angel/melbourne.png
+    caption: "Lunar New Year in Melbourne"
 ---
 
 For me, celebrating Lunar New Year in Melbourne just does not hit the same. Back in Hong Kong, the whole environment shifts during this period. The festive atmosphere and excitement are present everywhere you go. It felt as if everyone was part of the celebration. Here in Melbourne, the energy feels more muted and diluted. There are still traces of festive spirit, though they appear limited to only areas with larger Asian populations. Beyond that, the rest of the city just feels like every other day.

@@ -5,7 +5,7 @@
 // PAGE CONTAINER
 .container-main {
   @include flex();
-  background-color: v.$cl-light;
+  background-color: var(--cl-bg);
   width: 100%;
   height: 100svh;
   overflow: hidden;
@@ -18,7 +18,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     &:not(:last-child) {
-      border-right: 2px dotted v.$cl-red;
+      border-right: 2px dotted var(--cl-text-body);
     }
     &::-webkit-scrollbar {
       display: none;
@@ -108,7 +108,7 @@
     }
     @include flex($justify-content: center, $align-items: center);
     align-self: start;
-    border: 1px solid var(--cl-red);
+    border: 1px solid var(--cl-text-body);
     transition: background-color 400ms ease;
     // circle (no flex grow)
     flex: 0 0 3ch;
@@ -130,7 +130,7 @@
 .article-link.active,
 .article-link:hover {
   .article-link__number {
-    background-color: var(--cl-yellow);
+    background-color: var(--cl-stroke);
     font-weight: 700;
   }
 
@@ -188,10 +188,15 @@
     height: auto;
     border-radius: 4% / 6%;
     object-fit: cover;
-    border: 2px solid v.$cl-yellow;
-    box-shadow: 0 0 15px v.$cl-yellow;
+    border: 2px solid var(--cl-stroke);
+    box-shadow: 0 0 15px var(--cl-stroke);
+    &--no-border {
+      border: none;
+      box-shadow: none;
+    }
   }
   &__caption {
     @extend .text-caption;
+    text-align: center;
   }
 }

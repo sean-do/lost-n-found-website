@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FINDING HOME THROUGH CELEBRATION</title>
+    <title>finding home through celebration</title>
+    <script>
+      if (localStorage.getItem("colourMode") === "bw") {
+        document.documentElement.classList.add("grayscale");
+      }
+    </script>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
     <script src="/assets/js/main.js" type="module"></script>
@@ -14,7 +19,7 @@
       <div class="container-main__nav"><div class="container-nav">
   <nav class="colour-toggle">
     <button
-      class="colour-toggle__button toggle-bw"
+      class="colour-toggle__button toggle-grayscale"
       aria-label="Switch to grayscale mode"
     >
       <img
@@ -39,12 +44,12 @@
           class="nav-links__link "
           ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-zxly9s5" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-2bq3wpc" x="50%" y="100%" text-anchor="middle">
        Home
       </text>
     </defs>
-    <use href="#highlightText-zxly9s5" class="text-highlight-stroke" />
-    <use href="#highlightText-zxly9s5" class="text-highlight-fill" />
+    <use href="#highlightText-2bq3wpc" class="text-highlight-stroke" />
+    <use href="#highlightText-2bq3wpc" class="text-highlight-fill" />
   </svg></a
         >
       </li>
@@ -55,12 +60,12 @@
         >
           <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-jyrnys8" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-n0cerjx" x="50%" y="100%" text-anchor="middle">
        Read
       </text>
     </defs>
-    <use href="#highlightText-jyrnys8" class="text-highlight-stroke" />
-    <use href="#highlightText-jyrnys8" class="text-highlight-fill" />
+    <use href="#highlightText-n0cerjx" class="text-highlight-stroke" />
+    <use href="#highlightText-n0cerjx" class="text-highlight-fill" />
   </svg>
         </a>
       </li>
@@ -70,12 +75,12 @@
           class="nav-links__link "
           ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
     <defs>
-      <text id="highlightText-w4acp1k" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-v0q2fn1" x="50%" y="100%" text-anchor="middle">
        Contribute
       </text>
     </defs>
-    <use href="#highlightText-w4acp1k" class="text-highlight-stroke" />
-    <use href="#highlightText-w4acp1k" class="text-highlight-fill" />
+    <use href="#highlightText-v0q2fn1" class="text-highlight-stroke" />
+    <use href="#highlightText-v0q2fn1" class="text-highlight-fill" />
   </svg></a
         >
       </li>
@@ -186,27 +191,35 @@
     <img src="/assets/images/angel/angel.png" alt="" class="container-cover__author__image" />
     <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 14ch">
     <defs>
-      <text id="highlightText-8rf3eiv" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-okqmugh" x="50%" y="100%" text-anchor="middle">
        by Angel Leung
       </text>
     </defs>
-    <use href="#highlightText-8rf3eiv" class="text-highlight-stroke" />
-    <use href="#highlightText-8rf3eiv" class="text-highlight-fill" />
+    <use href="#highlightText-okqmugh" class="text-highlight-stroke" />
+    <use href="#highlightText-okqmugh" class="text-highlight-fill" />
   </svg>
   </div>
   <div class="container-images">
     
       <div class="container-image">
-        <img src="/assets/images/jen/newyear.jpg" alt="" class="container-image__image" />
+        <img
+          src="/assets/images/angel/hong-kong.png"
+          alt=""
+          class="container-image__image "
+        />
         <figcaption class="container-image__caption">
           Lunar New Year in Hong Kong
         </figcaption>
       </div>
     
       <div class="container-image">
-        <img src="/assets/images/jen/newyear.jpg" alt="" class="container-image__image" />
+        <img
+          src="/assets/images/angel/melbourne.png"
+          alt=""
+          class="container-image__image "
+        />
         <figcaption class="container-image__caption">
-          Lunar New Year in Hong Kong
+          Lunar New Year in Melbourne
         </figcaption>
       </div>
     

@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FINDING CONNECTION THROUGH COMMUNITY</title>
+    <title>finding connection through community</title>
+    <script>
+      if (localStorage.getItem("colourMode") === "bw") {
+        document.documentElement.classList.add("grayscale");
+      }
+    </script>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
     <script src="/assets/js/main.js" type="module"></script>
@@ -14,7 +19,7 @@
       <div class="container-main__nav"><div class="container-nav">
   <nav class="colour-toggle">
     <button
-      class="colour-toggle__button toggle-bw"
+      class="colour-toggle__button toggle-grayscale"
       aria-label="Switch to grayscale mode"
     >
       <img
@@ -39,12 +44,12 @@
           class="nav-links__link "
           ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-qibqd06" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-d9n8vce" x="50%" y="100%" text-anchor="middle">
        Home
       </text>
     </defs>
-    <use href="#highlightText-qibqd06" class="text-highlight-stroke" />
-    <use href="#highlightText-qibqd06" class="text-highlight-fill" />
+    <use href="#highlightText-d9n8vce" class="text-highlight-stroke" />
+    <use href="#highlightText-d9n8vce" class="text-highlight-fill" />
   </svg></a
         >
       </li>
@@ -55,12 +60,12 @@
         >
           <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-9va286v" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-jowsgwr" x="50%" y="100%" text-anchor="middle">
        Read
       </text>
     </defs>
-    <use href="#highlightText-9va286v" class="text-highlight-stroke" />
-    <use href="#highlightText-9va286v" class="text-highlight-fill" />
+    <use href="#highlightText-jowsgwr" class="text-highlight-stroke" />
+    <use href="#highlightText-jowsgwr" class="text-highlight-fill" />
   </svg>
         </a>
       </li>
@@ -70,12 +75,12 @@
           class="nav-links__link "
           ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
     <defs>
-      <text id="highlightText-qfz8sfr" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-ygbatza" x="50%" y="100%" text-anchor="middle">
        Contribute
       </text>
     </defs>
-    <use href="#highlightText-qfz8sfr" class="text-highlight-stroke" />
-    <use href="#highlightText-qfz8sfr" class="text-highlight-fill" />
+    <use href="#highlightText-ygbatza" class="text-highlight-stroke" />
+    <use href="#highlightText-ygbatza" class="text-highlight-fill" />
   </svg></a
         >
       </li>
@@ -186,15 +191,37 @@
     <img src="/assets/images/ken/ken.png" alt="" class="container-cover__author__image" />
     <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 14ch">
     <defs>
-      <text id="highlightText-ra4ugbn" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-zh06mdw" x="50%" y="100%" text-anchor="middle">
        by Kenneth Toh
       </text>
     </defs>
-    <use href="#highlightText-ra4ugbn" class="text-highlight-stroke" />
-    <use href="#highlightText-ra4ugbn" class="text-highlight-fill" />
+    <use href="#highlightText-zh06mdw" class="text-highlight-stroke" />
+    <use href="#highlightText-zh06mdw" class="text-highlight-fill" />
   </svg>
   </div>
   <div class="container-images">
+    
+      <div class="container-image">
+        <img
+          src="/assets/images/ken/ken-nusantao.png"
+          alt=""
+          class="container-image__image "
+        />
+        <figcaption class="container-image__caption">
+          Ken at his Nusantao pop-up
+        </figcaption>
+      </div>
+    
+      <div class="container-image">
+        <img
+          src="/assets/images/ken/gai-wong.png"
+          alt=""
+          class="container-image__image "
+        />
+        <figcaption class="container-image__caption">
+          Hainanese Chicken Rice at Gai Wong
+        </figcaption>
+      </div>
     
   </div>
 </div>

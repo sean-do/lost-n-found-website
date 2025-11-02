@@ -19,11 +19,10 @@ $fs-heading: 5rem;
 // $text-outline-s-red: 2px solid
 
 // colours
-$cl-light: var(--cl-light);
-// $cl-red: hsl(354, 98%, 55%);
-$cl-red: var(--cl-red);
-$cl-yellow: var(--cl-yellow);
-$cl-orange: var(--cl-orange);
+$cl-light: hsl(53, 60%, 90%);
+$cl-red: hsl(7, 78%, 55%);
+$cl-yellow: #ffe600;
+$cl-orange: #de5626;
 
 // gradient
 $gradient: linear-gradient(
@@ -53,13 +52,10 @@ $gradient: linear-gradient(
 
   // COLOURS
 
-  --cl-text-body: hsl(7, 80%, 55%); //change to red
-  --cl-bg: hsl(53, 60%, 90%);
-  // change later to bg, text...
-  --cl-light: hsl(53, 60%, 90%);
-  --cl-red: hsl(7, 78%, 55%);
-  --cl-yellow: #ffe600;
-  --cl-orange: #de5626;
+  --cl-text-body: #{$cl-red};
+  --cl-bg: #{$cl-light};
+  --cl-stroke: #{$cl-yellow};
+  --cl-text-highlight: #{$cl-orange};
 
   // HIGHLIGHT STROKE WIDTH
 }
