@@ -8,7 +8,7 @@ images:
   - src: /assets/images/julia/gangnam-style.png
     caption: "The famous Gangnam Style dance (Psy)"
   - src: /assets/images/julia/youtubers.png
-    caption: "The famous Gangnam Style dance (Psy)"
+    caption: "Julia's favourite Youtubers"
     type: no-border
 ---
 
