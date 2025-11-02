@@ -26,8 +26,30 @@
   --cl-light: white;
   --cl-yellow: #eaeaea;
   --cl-orange: #3a3a3a;
+  --cl-text-body: #3a3a3a;
   img,
   video {
     filter: grayscale(100%) brightness(0.8) contrast(2);
+  }
+}
+
+// TRIM TEXT
+.trim-sans {
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    pointer-events: none;
+  }
+
+  &::before {
+    margin-bottom: calc(-0.5lh + 0.48em);
+  }
+
+  &::after {
+    margin-top: calc(-0.5lh + 0.28em);
   }
 }

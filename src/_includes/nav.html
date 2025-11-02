@@ -1,53 +1,66 @@
 <div class="container-nav">
-  <div class="container-logo">
-    <img
-      id="logo"
-      src="/assets/images/logo-animated.gif"
-      alt="lost n found logo"
-    />
-    <p class="text-body-sans">
-      is a safe space to share and read stories, to connect people that lived
-      and/or living between cultures, and to celebrate cultural diversity.
-    </p>
-  </div>
+  <nav class="colour-toggle">
+    <button
+      class="colour-toggle__button toggle-bw"
+      aria-label="Switch to grayscale mode"
+    >
+      <img
+        src="/assets/images/logo-1.svg"
+        alt="lost n found logo black and white"
+      />
+    </button>
+    <img src="/assets/images/logo-apos.svg" />
+    <button
+      class="colour-toggle__button toggle-colour"
+      aria-label="Switch to colour mode"
+    >
+      <img src="/assets/images/logo-2.svg" alt="lost n found logo colour" />
+    </button>
+  </nav>
 
   <nav class="container-nav">
-    <ul class="container-links">
-      <a href="/stories/jen" class="active">
-        {% highlight "Read" %}
-        {# <svg
-          class="text-subheading"
-          style="vertical-align: baseline; height: 0.5em; width: 4ch"
+    <ul class="nav-links">
+      <li class="nav-links__item">
+        <a
+          href="/"
+          class="nav-links__link {% if page.url == '/' %}active{% endif %}"
+          >{% highlight "Home", "text-body" %}</a
         >
-          <defs>
-            <text id="about-link" x="50%" y="100%" text-anchor="middle">
-              Read
-            </text>
-          </defs>
-          <use href="#about-link" class="text-highlight-stroke" />
-          <use href="#about-link" class="text-highlight-fill" />
-        </svg> #}
-      </a>
-      /
-      <a href="/about">{% highlight "About" %}</a>
-      /
-      <a href="/contribute">{% highlight "Contribute" %}</a>
+      </li>
+      <li class="nav-links__item">
+        <a
+          href="/stories/jen"
+          class="nav-links__link {% if '/stories' in page.url %}active{% endif %}"
+        >
+          {% highlight "Read", "text-body" %}
+        </a>
+      </li>
+      <li class="nav-links__item">
+        <a
+          href="/contribute"
+          class="nav-links__link {% if page.url == '/contribute/' %}active{% endif %}"
+          >{% highlight "Contribute", "text-body" %}</a
+        >
+      </li>
     </ul>
-    <ul class="container-article-links">
+
+    <ul class="nav-articles">
       {%- for story in collections.post -%}
         <li>
           <a
-            class="container-article-links__link {% if page.url === story.url %}active{% endif %}"
+            class="article-link {% if page.url == story.url %}active{% endif %}"
             href="{{ story.url | url }}"
           >
             <div class="article-link__number">
-              {{ "0" + loop.index if loop.index < 10 else loop.index }}
+              <span
+                >{{ "0" + loop.index if loop.index < 10 else loop.index }}</span
+              >
             </div>
-            <div class="container-article-links__link">
-              <div class="container-article-links__link__name">
-                <div>{{ story.data.title | fixRunt | safe }}</div>
-                <div>({{ story.data.author }})</div>
+            <div class="article-link__name-group">
+              <div class="article-link__title">
+                {{ story.data.title | fixRunt | safe }}
               </div>
+              <div class="article-link__author">({{ story.data.author }})</div>
             </div>
           </a>
         </li>

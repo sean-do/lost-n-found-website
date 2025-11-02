@@ -1,5 +1,6 @@
 @use "variables" as v;
 @use "fonts";
+@use "utilities";
 
 // TYPE UTILITIES
 @mixin text-center {
@@ -8,14 +9,15 @@
 
 // TYPE CLASSES
 body {
-  font: 500 v.$fs-body fonts.$serif;
+  font: 500 var(--fs-body) fonts.$serif;
   color: v.$cl-red;
   letter-spacing: -0.03em;
-  word-spacing: -0.08em;
+  word-spacing: -0.1em;
   line-height: 1.1;
+  background-color: var(--cl-bg);
 }
 
-.text-heading {
+.text-display {
   font: 900 v.$fs-heading fonts.$sans;
   line-height: 0.9;
   letter-spacing: -0.02em;
@@ -27,13 +29,25 @@ body {
 }
 
 .text-body-sans {
-  font: 500 v.$fs-body fonts.$sans;
+  font: 500 var(--fs-body) fonts.$sans;
+}
+
+.text-heading {
+  font: 900 var(--fs-body) fonts.$sans;
   line-height: 1.1;
-  word-spacing: normal;
+  word-spacing: 0.05em;
+  @extend .trim-sans;
+}
+
+.text-subheading {
+  font: 500 var(--fs-subheading) fonts.$sans;
+  line-height: 1.1;
+  letter-spacing: normal;
+  word-spacing: 0.05em;
 }
 
 .text-body {
-  text-indent: v.$s-l;
+  text-indent: v.$s-xl;
   // reset indent for first paragraph, questions & paragraph right after question
   & p:first-child,
   & .text-question,
@@ -47,9 +61,9 @@ body {
 }
 
 .text-question {
-  font: 500 v.$fs-body fonts.$sans;
+  font: 500 var(--fs-body) fonts.$sans;
   word-spacing: normal;
-  margin-bottom: v.$s-s;
+  margin-bottom: var(--gap-secondary);
   &:not(:first-child) {
     margin-top: v.$s-m;
   }
@@ -57,27 +71,50 @@ body {
 
 .text-caption {
   font: 500 v.$fs-caption fonts.$serif-normal;
-  // word-spacing: -0.05em;
-  // font-size: v.$fs-caption;
-}
-
-.text-subheading {
-  @extend .text-body;
-  letter-spacing: -0.01em;
-  font-weight: 700;
 }
 
 .text-intro {
-  font: 500 v.$fs-body-large fonts.$sans;
+  font: 500 v.$fs-m-large fonts.$sans;
   line-height: 1.05;
   letter-spacing: -0.03em;
   word-spacing: normal;
   margin-bottom: v.$s-m;
 }
 
-.text-highlight-red {
+.text-intro--large {
+  // font: 500 v.$fs-heading font.$sans;
+  font-size: v.$fs-heading;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.text-highlight {
+  @extend .text-body;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  text-indent: 0;
+}
+
+.text-highlight--red {
   font-weight: 900;
   letter-spacing: normal;
+}
+
+.text-highlight--large {
+  font: 700 0.9em fonts.$serif;
+  letter-spacing: normal;
+  font-style: normal;
+  margin: 0 v.$s-xs;
+  transform: translateY(-0.05em);
+}
+
+// DEFAULT
+h1 {
+  @extend .text-display;
+}
+
+h2 {
+  @extend .text-heading;
 }
 
 // rounded border text
@@ -86,14 +123,19 @@ svg {
   height: 1em;
   width: 100%;
   overflow: visible;
-  & .text-highlight-stroke {
-    stroke-width: 10px;
+  .text-highlight-stroke {
+    stroke-width: 0.35em;
     stroke-linejoin: round;
     stroke: v.$cl-yellow;
     fill: none;
   }
-  & .text-highlight-fill {
+  .text-highlight-fill {
     fill: v.$cl-orange;
     stroke: none;
   }
+}
+
+// TYPE UTILITIES
+.text-align-left {
+  text-align: left;
 }

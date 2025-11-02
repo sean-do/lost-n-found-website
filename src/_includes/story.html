@@ -3,15 +3,10 @@ layout: "base.html"
 ---
 
 {# TITLE #}
-<div class="container__item container__item--w-40">
-  {% include "title.html" %}
-</div>
-
-{# GRADIENT BORDER #}
-<div class="container__divider container__divider--light-yellow-red"></div>
+<div class="container-main__title">{% include "title.html" %}</div>
 
 {# BODY #}
-<div class="container__item container__item--w-40">
+<div class="container-main__body">
   <p class="text-intro">{{ intro }}</p>
   <div class="text-body {% if type %}text-body--{{ type }}{% endif %}">
     {{ content | safe }}

@@ -15,13 +15,6 @@ export default function (eleventyConfig) {
     }
   }
 
-  // eleventyConfig.addShortcode("highlight", (text, className = "text-body") => {
-  //   const width = text.length + "ch";
-  //   return `<svg class="${className}" style="vertical-align: baseline; height: 0.5em; width: ${width}">
-  //     <text x="50%" y="100%" text-anchor="middle" dominant-baseline="alphabetic">${text}</text>
-  //   </svg>`;
-  // });
-
   eleventyConfig.addPassthroughCopy("./src/css/styles.css");
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("favicon.png");

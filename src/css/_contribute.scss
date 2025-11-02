@@ -1,0 +1,13 @@
+@use "utilities" as *;
+
+.contribute .container-main__title {
+  @include flex(column, var(--gap-main));
+  p {
+    margin-bottom: var(--gap-subheading);
+  }
+}
+
+.contribute .container-main__body {
+  height: 100vh;
+  @include flex(column, 0, end);
+}

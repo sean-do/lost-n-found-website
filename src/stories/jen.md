@@ -7,7 +7,7 @@ images:
   - src: /assets/images/jen/jen-kid-noise.jpg
     caption: "Younger Jen with family"
   - src: /assets/images/jen/jen-school.jpg
-    caption: "Lunar New Year in Hong Kong"
+    caption: "Younger Jen in school"
 ---
 
 It’s a weird thing being a race different to the “norm” in the only country you’ve ever known. I think for a lot of immigrant children (or immigrants in general), a sense of {% highlight "comfort" %} and {% highlight "belonging" %} is gained in your host country when you connect with others from your heritage culture, where together you can celebrate your unique ways of being and living.

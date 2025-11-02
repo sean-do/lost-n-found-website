@@ -1,5 +1,5 @@
 <div class="container-cover">
-  <div class="container-cover__title text-heading">{{ title }}</div>
+  <div class="container-cover__title text-display">{{ title }}</div>
   <div class="container-cover__author">
     <img src="{{ image }}" alt="" class="container-cover__author__image" />
     {% highlight "by " + author %}
@@ -15,75 +15,3 @@
     {% endfor %}
   </div>
 </div>
-
-<svg style="display:none;" width="0" height="0">
-  <defs>
-    <filter id="rounded">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-      <feColorMatrix
-        mode="matrix"
-        values="1 0 0  0   0
-                0 1 0  0   0
-                0 0 1  0   0
-                0 0 0 35  -7"
-      />
-      <feBlend in="SourceGraphic" />
-    </filter>
-  </defs>
-</svg>
-
-{# <svg class="text-heading">
-    <text x="0" y="100%" class="text-heading__text">{{- title -}}</text>
-  </svg> #}
-
-{# <svg class="text-heading">
-    <foreignObject x="0" y="0" class="text-heading__foreign"
-      ><div xmlns="http://www.w3.org/1999/xhtml" class="text-heading__text">
-        {{- title -}}
-      </div></foreignObject
-    >
-  </svg>
-  <script>
-    const svg = document.querySelector(".text-heading");
-    const text = svg.querySelector(".text-heading__text");
-
-    function fitText() {
-      const box = text.getBoundingClientRect();
-      svg.style.height = box.height;
-    }
-
-    window.addEventListener("resize", fitText);
-    window.addEventListener("load", fitText);
-  </script> #}
-
-{# <div
-  class="heading-container"
-  style="display: flex; flex-direction: column; gap: 0"
->
-  <svg class="text-heading">
-    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-      FINDING
-    </text>
-  </svg>
-  <svg class="text-heading">
-    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-      COMFORT
-    </text>
-  </svg>
-  <svg class="text-heading">
-    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-      BEYOND
-    </text>
-  </svg>
-  <svg class="text-heading">
-    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-      LABELS
-    </text>
-  </svg>
-</div>
-
-<svg class="text-subheading">
-  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">
-    by Jennifer Chen
-  </text>
-</svg> #}

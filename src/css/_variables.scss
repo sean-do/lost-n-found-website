@@ -1,10 +1,3 @@
-:root {
-  --cl-light: hsl(53, 60%, 90%);
-  --cl-red: hsl(7, 80%, 55%);
-  --cl-yellow: #ffe600;
-  --cl-orange: #de5626;
-}
-
 // spacing
 $s-xxs: 0.25rem;
 $s-xs: 0.5rem;
@@ -14,9 +7,10 @@ $s-l: 4rem;
 $s-xl: 6rem;
 
 // font-size-serif
-$fs-caption: 0.875rem;
-$fs-body: 1.75rem;
-$fs-body-large: 2.75rem;
+$fs-caption: 1rem;
+$fs-s: 1.5rem;
+$fs-m: 1.75rem;
+$fs-m-large: 2.75rem;
 $fs-heading: 5rem;
 
 // line-height
@@ -41,18 +35,31 @@ $gradient: linear-gradient(
   $cl-light 100%
 );
 
-// hsl(53, 90%, 90%) 30%,
-// hsl(54, 100%, 65%) 50%,
-// hsl(53, 90%, 90%) 70%,
-$gradient-light-yellow-red: linear-gradient(
-  90deg,
-  $cl-light 0%,
-  $cl-yellow 50%,
-  $cl-red 100%
-);
-$gradient-red-orange-yellow: linear-gradient(
-  90deg,
-  $cl-red 0%,
-  $cl-orange 50%,
-  $cl-yellow 100%
-);
+:root {
+  // FONT SIZE
+  --fs-subheading: #{$fs-s};
+  --fs-body: #{$fs-m};
+
+  // GAP
+  --gap-main: #{$s-m};
+  --gap-secondary: #{$s-s};
+  --gap-subheading: #{$s-xxs};
+
+  // PADDING
+  --pd-btn: #{$s-xs} #{$s-s};
+
+  // MARGIN
+  --mg-link: 0 #{$s-xs};
+
+  // COLOURS
+
+  --cl-text-body: hsl(7, 80%, 55%); //change to red
+  --cl-bg: hsl(53, 60%, 90%);
+  // change later to bg, text...
+  --cl-light: hsl(53, 60%, 90%);
+  --cl-red: hsl(7, 78%, 55%);
+  --cl-yellow: #ffe600;
+  --cl-orange: #de5626;
+
+  // HIGHLIGHT STROKE WIDTH
+}

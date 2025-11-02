@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="icon" type="image/png" href="/assets/images/logo-fav.png" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <script src="/assets/js/main.js" type="module"></script>
   </head>
-  <body>
-    <div class="container">
+  <body class="{{ page.fileSlug }}">
+    <div class="container-main">
       {# NAVIGATION #}
-      <div class="container__item container__item--w-20">
-        {% include "nav.html" %}
-      </div>
-
-      {# GRADIENT BORDER #}
-      <div
-        class="container__divider container__divider--light-yellow-red"
-      ></div>
+      <div class="container-main__nav">{% include "nav.html" %}</div>
 
       {# CONTENT #}
       {{ content | safe }}
     </div>
+    {% include "filters/heading-filter.html" %}
   </body>
 </html>

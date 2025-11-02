@@ -5,137 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FINDING COMFORT BEYOND LABELS</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="icon" type="image/png" href="/assets/images/logo-fav.png" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <script src="/assets/js/main.js" type="module"></script>
   </head>
-  <body>
-    <div class="container">
+  <body class="jen">
+    <div class="container-main">
       
-      <div class="container__item container__item--w-20">
-        <div class="container-nav">
-  <div class="container-logo">
-    <img
-      id="logo"
-      src="/assets/images/logo-animated.gif"
-      alt="lost n found logo"
-    />
-    <p class="text-body-sans">
-      is a safe space to share and read stories, to connect people that lived
-      and/or living between cultures, and to celebrate cultural diversity.
-    </p>
-  </div>
+      <div class="container-main__nav"><div class="container-nav">
+  <nav class="colour-toggle">
+    <button
+      class="colour-toggle__button toggle-bw"
+      aria-label="Switch to grayscale mode"
+    >
+      <img
+        src="/assets/images/logo-1.svg"
+        alt="lost n found logo black and white"
+      />
+    </button>
+    <img src="/assets/images/logo-apos.svg" />
+    <button
+      class="colour-toggle__button toggle-colour"
+      aria-label="Switch to colour mode"
+    >
+      <img src="/assets/images/logo-2.svg" alt="lost n found logo colour" />
+    </button>
+  </nav>
 
   <nav class="container-nav">
-    <ul class="container-links">
-      <a href="/stories/jen" class="active">
-        <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+    <ul class="nav-links">
+      <li class="nav-links__item">
+        <a
+          href="/"
+          class="nav-links__link "
+          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-40cxnhz" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-8r0vqyc" x="50%" y="100%" text-anchor="middle">
+       Home
+      </text>
+    </defs>
+    <use href="#highlightText-8r0vqyc" class="text-highlight-stroke" />
+    <use href="#highlightText-8r0vqyc" class="text-highlight-fill" />
+  </svg></a
+        >
+      </li>
+      <li class="nav-links__item">
+        <a
+          href="/stories/jen"
+          class="nav-links__link active"
+        >
+          <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+    <defs>
+      <text id="highlightText-q6p1n1z" x="50%" y="100%" text-anchor="middle">
        Read
       </text>
     </defs>
-    <use href="#highlightText-40cxnhz" class="text-highlight-stroke" />
-    <use href="#highlightText-40cxnhz" class="text-highlight-fill" />
+    <use href="#highlightText-q6p1n1z" class="text-highlight-stroke" />
+    <use href="#highlightText-q6p1n1z" class="text-highlight-fill" />
   </svg>
-        
-      </a>
-      /
-      <a href="/about"><svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 5ch">
+        </a>
+      </li>
+      <li class="nav-links__item">
+        <a
+          href="/contribute"
+          class="nav-links__link "
+          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
     <defs>
-      <text id="highlightText-or6m01d" x="50%" y="100%" text-anchor="middle">
-       About
-      </text>
-    </defs>
-    <use href="#highlightText-or6m01d" class="text-highlight-stroke" />
-    <use href="#highlightText-or6m01d" class="text-highlight-fill" />
-  </svg></a>
-      /
-      <a href="/contribute"><svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 10ch">
-    <defs>
-      <text id="highlightText-oe8pyb9" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-3pmq20y" x="50%" y="100%" text-anchor="middle">
        Contribute
       </text>
     </defs>
-    <use href="#highlightText-oe8pyb9" class="text-highlight-stroke" />
-    <use href="#highlightText-oe8pyb9" class="text-highlight-fill" />
-  </svg></a>
+    <use href="#highlightText-3pmq20y" class="text-highlight-stroke" />
+    <use href="#highlightText-3pmq20y" class="text-highlight-fill" />
+  </svg></a
+        >
+      </li>
     </ul>
-    <ul class="container-article-links"><li>
+
+    <ul class="nav-articles"><li>
           <a
-            class="container-article-links__link active"
+            class="article-link active"
             href="/stories/jen/"
           >
             <div class="article-link__number">
-              01
+              <span
+                >01</span
+              >
             </div>
-            <div class="container-article-links__link">
-              <div class="container-article-links__link__name">
-                <div>FINDING COMFORT BEYOND&nbsp;LABELS</div>
-                <div>(Jennifer Chen)</div>
+            <div class="article-link__name-group">
+              <div class="article-link__title">
+                FINDING COMFORT BEYOND&nbsp;LABELS
               </div>
+              <div class="article-link__author">(Jennifer Chen)</div>
             </div>
           </a>
         </li>
       <li>
           <a
-            class="container-article-links__link "
+            class="article-link "
             href="/stories/ken/"
           >
             <div class="article-link__number">
-              02
+              <span
+                >02</span
+              >
             </div>
-            <div class="container-article-links__link">
-              <div class="container-article-links__link__name">
-                <div>FINDING CONNECTION THROUGH&nbsp;COMMUNITY</div>
-                <div>(Kenneth Toh)</div>
+            <div class="article-link__name-group">
+              <div class="article-link__title">
+                FINDING CONNECTION THROUGH&nbsp;COMMUNITY
               </div>
+              <div class="article-link__author">(Kenneth Toh)</div>
             </div>
           </a>
         </li>
       <li>
           <a
-            class="container-article-links__link "
+            class="article-link "
             href="/stories/maxine/"
           >
             <div class="article-link__number">
-              03
+              <span
+                >03</span
+              >
             </div>
-            <div class="container-article-links__link">
-              <div class="container-article-links__link__name">
-                <div>FINDING PRIDE AMID&nbsp;DIFFERENCES</div>
-                <div>(Maxine Liang)</div>
+            <div class="article-link__name-group">
+              <div class="article-link__title">
+                FINDING PRIDE AMID&nbsp;DIFFERENCES
               </div>
+              <div class="article-link__author">(Maxine Liang)</div>
             </div>
           </a>
         </li>
       <li>
           <a
-            class="container-article-links__link "
+            class="article-link "
             href="/stories/julia/"
           >
             <div class="article-link__number">
-              04
+              <span
+                >04</span
+              >
             </div>
-            <div class="container-article-links__link">
-              <div class="container-article-links__link__name">
-                <div>FINDING SOMETHING WITH&nbsp;MEDIA</div>
-                <div>(Julia Park)</div>
+            <div class="article-link__name-group">
+              <div class="article-link__title">
+                FINDING SELF WITH&nbsp;MEDIA
               </div>
+              <div class="article-link__author">(Julia Park)</div>
             </div>
           </a>
         </li>
       <li>
           <a
-            class="container-article-links__link "
+            class="article-link "
             href="/stories/angel/"
           >
             <div class="article-link__number">
-              05
+              <span
+                >05</span
+              >
             </div>
-            <div class="container-article-links__link">
-              <div class="container-article-links__link__name">
-                <div>FINDING HOME THROUGH&nbsp;CELEBRATION</div>
-                <div>(Angel Leung)</div>
+            <div class="article-link__name-group">
+              <div class="article-link__title">
+                FINDING HOME THROUGH&nbsp;CELEBRATION
               </div>
+              <div class="article-link__author">(Angel Leung)</div>
             </div>
           </a>
         </li>
@@ -143,30 +175,23 @@
     </ul>
   </nav>
 </div>
-
-      </div>
-
-      
-      <div
-        class="container__divider container__divider--light-yellow-red"
-      ></div>
+</div>
 
       
       
 
-<div class="container__item container__item--w-40">
-  <div class="container-cover">
-  <div class="container-cover__title text-heading">FINDING COMFORT BEYOND LABELS</div>
+<div class="container-main__title"><div class="container-cover">
+  <div class="container-cover__title text-display">FINDING COMFORT BEYOND LABELS</div>
   <div class="container-cover__author">
     <img src="/assets/images/jen/jen.png" alt="" class="container-cover__author__image" />
-    <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 16ch">
+    <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 16ch">
     <defs>
-      <text id="highlightText-m4aajp4" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-fjkoji1" x="50%" y="100%" text-anchor="middle">
        by Jennifer Chen
       </text>
     </defs>
-    <use href="#highlightText-m4aajp4" class="text-highlight-stroke" />
-    <use href="#highlightText-m4aajp4" class="text-highlight-fill" />
+    <use href="#highlightText-fjkoji1" class="text-highlight-stroke" />
+    <use href="#highlightText-fjkoji1" class="text-highlight-fill" />
   </svg>
   </div>
   <div class="container-images">
@@ -181,14 +206,75 @@
       <div class="container-image">
         <img src="/assets/images/jen/jen-school.jpg" alt="" class="container-image__image" />
         <figcaption class="container-image__caption">
-          Lunar New Year in Hong Kong
+          Younger Jen in school
         </figcaption>
       </div>
     
   </div>
 </div>
+</div>
 
-<svg style="display:none;" width="0" height="0">
+
+<div class="container-main__body">
+  <p class="text-intro">Jen shares about her experience being caught between two worlds of never feeling “enough” and how she managed to be at peace with her sense of self.</p>
+  <div class="text-body ">
+    <p>It’s a weird thing being a race different to the “norm” in the only country you’ve ever known. I think for a lot of immigrant children (or immigrants in general), a sense of <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
+<defs>
+<text id="highlightText-vzqfb02" x="50%" y="100%" text-anchor="middle">
+comfort
+</text>
+</defs>
+<use href="#highlightText-vzqfb02" class="text-highlight-stroke" />
+<use href="#highlightText-vzqfb02" class="text-highlight-fill" />
+</svg> and <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
+<defs>
+<text id="highlightText-xb4mumn" x="50%" y="100%" text-anchor="middle">
+belonging
+</text>
+</defs>
+<use href="#highlightText-xb4mumn" class="text-highlight-stroke" />
+<use href="#highlightText-xb4mumn" class="text-highlight-fill" />
+</svg> is gained in your host country when you connect with others from your heritage culture, where together you can celebrate your unique ways of being and living.</p>
+<p>In my experience, gaining a sense of stability and <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 10ch">
+<defs>
+<text id="highlightText-oysexno" x="50%" y="100%" text-anchor="middle">
+connection
+</text>
+</defs>
+<use href="#highlightText-oysexno" class="text-highlight-stroke" />
+<use href="#highlightText-oysexno" class="text-highlight-fill" />
+</svg> hasn’t been so straightforward. Having grown up my whole life in Australia, there has always been a <span class="text-highlight--red">tension</span> between simultaneous desires to feel “Australian enough” and “Chinese enough,” when the reality is that my identity is an inextricable combination of both cultures. Despite being culturally <span class="text-highlight--red">disconnected</span> from China – unable to speak the language and disengaged from most traditions from my parents’ respective hometowns – my parents’ dispositions as people are fundamentally informed by their experiences growing up in China, and this has therefore fundamentally informed my own ways of being. This means that as <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
+<defs>
+<text id="highlightText-8jj3swi" x="50%" y="100%" text-anchor="middle">
+connected
+</text>
+</defs>
+<use href="#highlightText-8jj3swi" class="text-highlight-stroke" />
+<use href="#highlightText-8jj3swi" class="text-highlight-fill" />
+</svg> as I feel to Australian and Western culture, there is a perpetual <span class="text-highlight--red">gap</span> between me and the things I consume because of the context of my heritage. There are times where I question whether my consumption of Western media is wholly driven by genuine desire and enjoyment, or if a part of it can be attributed to an underlying, ever-present desire to <span class="text-highlight--red">conform</span> and <span class="text-highlight--red">appease</span> the Western standard. That is to say, a part of me feels that my engagement with Western culture is predicated on a desire to feel more Western, but of course no amount of engagement in a culture can compensate for your <span class="text-highlight--red">lack</span> of heritage in said culture.</p>
+<p>As I grow older and meet more people with diverse backgrounds and relationships to their heritage and host cultures, I feel increasingly <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 11ch">
+<defs>
+<text id="highlightText-pbx4tol" x="50%" y="100%" text-anchor="middle">
+comfortable
+</text>
+</defs>
+<use href="#highlightText-pbx4tol" class="text-highlight-stroke" />
+<use href="#highlightText-pbx4tol" class="text-highlight-fill" />
+</svg> with this gap. Though <span class="text-highlight--red">labels</span> and boxes can offer comfort and stability, they can also be restrictive and unconducive to developing an independent sense of self – that is, who you are beyond the conventions of labels that you may or may not resonate with. When I consider my life and who I am becoming as a person, I ultimately enjoy the fact that my engagement with the world is through the lens of my particular, somewhat unconventional relationship with culture – a position that doesn’t align me with one box or another. I enjoy it because it enables me to <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
+<defs>
+<text id="highlightText-i4zbvyu" x="50%" y="100%" text-anchor="middle">
+connect
+</text>
+</defs>
+<use href="#highlightText-i4zbvyu" class="text-highlight-stroke" />
+<use href="#highlightText-i4zbvyu" class="text-highlight-fill" />
+</svg> with a diverse array of people without needing the <span class="text-highlight--red">pretence</span> of shared experience.</p>
+
+  </div>
+</div>
+
+    </div>
+    <svg style="display:none;" width="0" height="0">
   <defs>
     <filter id="rounded">
       <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
@@ -204,76 +290,5 @@
   </defs>
 </svg>
 
-
-
-
-
-
-
-</div>
-
-
-<div class="container__divider container__divider--light-yellow-red"></div>
-
-
-<div class="container__item container__item--w-40">
-  <p class="text-intro">Jen shares about her experience being caught between two worlds of never feeling “enough” and how she managed to be at peace with her sense of self.</p>
-  <div class="text-body ">
-    <p>It’s a weird thing being a race different to the “norm” in the only country you’ve ever known. I think for a lot of immigrant children (or immigrants in general), a sense of <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 7ch">
-<defs>
-<text id="highlightText-8vroqhm" x="50%" y="100%" text-anchor="middle">
-comfort
-</text>
-</defs>
-<use href="#highlightText-8vroqhm" class="text-highlight-stroke" />
-<use href="#highlightText-8vroqhm" class="text-highlight-fill" />
-</svg> and <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 9ch">
-<defs>
-<text id="highlightText-f75m1ho" x="50%" y="100%" text-anchor="middle">
-belonging
-</text>
-</defs>
-<use href="#highlightText-f75m1ho" class="text-highlight-stroke" />
-<use href="#highlightText-f75m1ho" class="text-highlight-fill" />
-</svg> is gained in your host country when you connect with others from your heritage culture, where together you can celebrate your unique ways of being and living.</p>
-<p>In my experience, gaining a sense of stability and <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 10ch">
-<defs>
-<text id="highlightText-a93zrf4" x="50%" y="100%" text-anchor="middle">
-connection
-</text>
-</defs>
-<use href="#highlightText-a93zrf4" class="text-highlight-stroke" />
-<use href="#highlightText-a93zrf4" class="text-highlight-fill" />
-</svg> hasn’t been so straightforward. Having grown up my whole life in Australia, there has always been a <span class="text-highlight-red">tension</span> between simultaneous desires to feel “Australian enough” and “Chinese enough,” when the reality is that my identity is an inextricable combination of both cultures. Despite being culturally <span class="text-highlight-red">disconnected</span> from China – unable to speak the language and disengaged from most traditions from my parents’ respective hometowns – my parents’ dispositions as people are fundamentally informed by their experiences growing up in China, and this has therefore fundamentally informed my own ways of being. This means that as <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 9ch">
-<defs>
-<text id="highlightText-pu0rjxe" x="50%" y="100%" text-anchor="middle">
-connected
-</text>
-</defs>
-<use href="#highlightText-pu0rjxe" class="text-highlight-stroke" />
-<use href="#highlightText-pu0rjxe" class="text-highlight-fill" />
-</svg> as I feel to Australian and Western culture, there is a perpetual <span class="text-highlight-red">gap</span> between me and the things I consume because of the context of my heritage. There are times where I question whether my consumption of Western media is wholly driven by genuine desire and enjoyment, or if a part of it can be attributed to an underlying, ever-present desire to <span class="text-highlight-red">conform</span> and <span class="text-highlight-red">appease</span> the Western standard. That is to say, a part of me feels that my engagement with Western culture is predicated on a desire to feel more Western, but of course no amount of engagement in a culture can compensate for your <span class="text-highlight-red">lack</span> of heritage in said culture.</p>
-<p>As I grow older and meet more people with diverse backgrounds and relationships to their heritage and host cultures, I feel increasingly <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 11ch">
-<defs>
-<text id="highlightText-iuikp8b" x="50%" y="100%" text-anchor="middle">
-comfortable
-</text>
-</defs>
-<use href="#highlightText-iuikp8b" class="text-highlight-stroke" />
-<use href="#highlightText-iuikp8b" class="text-highlight-fill" />
-</svg> with this gap. Though <span class="text-highlight-red">labels</span> and boxes can offer comfort and stability, they can also be restrictive and unconducive to developing an independent sense of self – that is, who you are beyond the conventions of labels that you may or may not resonate with. When I consider my life and who I am becoming as a person, I ultimately enjoy the fact that my engagement with the world is through the lens of my particular, somewhat unconventional relationship with culture – a position that doesn’t align me with one box or another. I enjoy it because it enables me to <svg class="text-subheading" style="vertical-align: baseline; height: 0.5em; width: 7ch">
-<defs>
-<text id="highlightText-k5a9ioo" x="50%" y="100%" text-anchor="middle">
-connect
-</text>
-</defs>
-<use href="#highlightText-k5a9ioo" class="text-highlight-stroke" />
-<use href="#highlightText-k5a9ioo" class="text-highlight-fill" />
-</svg> with a diverse array of people without needing the <span class="text-highlight-red">pretence</span> of shared experience.</p>
-
-  </div>
-</div>
-
-    </div>
   </body>
 </html>

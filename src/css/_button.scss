@@ -1,0 +1,39 @@
+@use "utilities" as u;
+@use "variables" as v;
+@use "type";
+
+.form__button {
+  position: relative;
+  width: min-content;
+  background-color: transparent;
+  border-radius: calc(Infinity * 1px);
+  padding: var(--pd-btn);
+  color: var(--cl-text-body);
+  border: 2px dotted var(--cl-text-body);
+  @extend .text-subheading;
+  @extend .trim-sans;
+  font-weight: 700;
+  transition: background-color 400ms ease;
+
+  &:hover {
+    background-color: var(--cl-yellow);
+    font-weight: 900;
+  }
+}
+
+.colour-toggle {
+  width: 100%;
+  @include u.flex($gap: #{v.$s-xxs});
+  &__button {
+    background: none;
+    border: none;
+    padding: 0;
+    @include u.flex;
+    cursor: pointer;
+  }
+  img {
+    display: block;
+    height: 60px;
+    width: auto;
+  }
+}
