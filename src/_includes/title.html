@@ -1,8 +1,16 @@
 <div class="container-cover">
-  <div class="container-cover__title text-display">{{ title }}</div>
-  <div class="container-cover__author">
-    <img src="{{ image }}" alt="" class="container-cover__author__image" />
-    {% highlight "by " + author %}
+  <div class="container-cover-text">
+    <div class="text-caption" style="margin-bottom: 8px;">
+      {{ '{' + type + '}' }}
+    </div>
+
+    <div>
+      <div class="container-cover__title text-display">{{ title }}</div>
+      <div class="container-cover__author">
+        <img src="{{ image }}" alt="" class="container-cover__author__image" />
+        {% highlight "by " + author %}
+      </div>
+    </div>
   </div>
   <div class="container-images">
     {% for image in images %}

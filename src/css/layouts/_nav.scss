@@ -1,0 +1,195 @@
+@use "../tokens" as v;
+@use "../utilities" as u;
+
+.container-main__nav {
+  @include u.flex(column, var(--gap-main));
+  width: 25%;
+
+  @include u.responsive(collapse) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+
+    // DISABLE FLEX
+    display: block;
+    padding: 0;
+  }
+}
+
+// TOP NAVIGATION (COLOUR TOGGLE & MENU BUTTON)
+.container-nav-top {
+  @include u.flex($justify-content: space-between);
+  background-color: var(--cl-bg);
+  position: sticky;
+  top: 0;
+  touch-action: none;
+
+  #menu-button {
+    // hide menu button on larger screens
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @include u.responsive(collapse) {
+    align-items: center;
+    padding: var(--pd-body);
+    #menu-button {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    // border on smaller screens under top nav
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      border-bottom: 2px dotted var(--cl-text-body);
+      pointer-events: none;
+    }
+  }
+}
+
+// ALL NAV LINKS
+.container-nav-links {
+  @include u.flex(column, var(--gap-main));
+  transition:
+    opacity 0.3s ease,
+    padding 0.3s ease,
+    max-height 0.5s ease;
+  // DEFAULT: hide on smaller screen
+  @include u.responsive(collapse) {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    align-items: center;
+    pointer-events: none;
+  }
+}
+
+// onclick menu-button
+.container-main__nav.show {
+  height: 100svh;
+  .container-nav-links {
+    padding: 0 var(--pd-body) var(--pd-body);
+    max-height: var(--content-height);
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+    overscroll-behavior: none;
+  }
+}
+
+.nav-links {
+  @include u.flex($gap: var(--mg-link));
+  // // <li>
+  // &__item {
+  //   @include u.flex;
+  // }
+  // &__item:not(:last-of-type)::after {
+  //   content: "/";
+  //   display: inline-block;
+  // }
+
+  // <a>
+  &__link {
+    // default state: no stroke, red text
+    > svg > .text-highlight-stroke {
+      stroke-width: 0;
+      transition: stroke-width 0.2s;
+      @include u.responsive(one-column) {
+        transition: none;
+      }
+    }
+    // hover & active state: with stroke, orange text
+    &:hover > svg,
+    &.active > svg {
+      font-weight: 700;
+      > .text-highlight-stroke {
+        stroke-width: 10px;
+      }
+    }
+  }
+
+  @include u.responsive(collapse) {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    gap: 0;
+    // top: calc(var(--pd-body) * -1);
+    background-color: var(--cl-bg);
+    > div {
+      display: none;
+    }
+    > li {
+      flex: 1;
+      text-align: center;
+      padding: var(--pd-btn);
+      border-bottom: 2px dotted var(--cl-text-body);
+      &:not(:last-child) {
+        border-right: 2px dotted var(--cl-text-body);
+      }
+    }
+    // &__item:not(:last-of-type)::after {
+    //   display: none;
+    // }
+  }
+}
+
+.nav-articles {
+  @include u.flex(column, var(--gap-main));
+}
+
+.article-link {
+  @include u.flex(row, var(--gap-secondary));
+  &__number {
+    @extend .text-subheading;
+    font-size: var(--fs-caption);
+    span {
+      @extend .trim-sans;
+    }
+    @include u.flex($justify-content: center, $align-items: center);
+    // align-self: start;
+    border: 1px solid var(--cl-text-body);
+    transition: background-color 400ms ease;
+    // circle (no flex grow)
+    flex: 0 0 3ch;
+    width: 3ch;
+    height: 3ch;
+    border-radius: 50%;
+  }
+  &__name-group {
+    .article-link__title {
+      @extend .text-subheading;
+    }
+    .article-link__author {
+      // font-family: "Kommuna Narrow";
+      // font-size: var(--fs-subheading);
+      @extend .text-caption;
+    }
+  }
+
+  @include u.responsive(collapse) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.article-link.active,
+.article-link:hover {
+  .article-link__number {
+    background-color: var(--cl-stroke);
+    font-weight: 700;
+  }
+
+  .article-link__title {
+    text-decoration: underline dotted 2px;
+    text-underline-offset: 0.1em;
+  }
+}

@@ -21,5 +21,10 @@ export default {
     return `<p class="text-question">${text}</p>`;
   },
 
-  // Add more shortcodes here later
+  image(src, caption, type) {
+    return `<div class="container-image">
+    <img class="container-image__image ${type ? `container-image__image--${type}` : ""}" src="${src}" alt="">
+    <figcaption class="container-image__caption">${caption}</figcaption>
+    </div>`;
+  },
 };

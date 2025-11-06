@@ -1,6 +1,7 @@
 ---
 title: "FINDING HOME THROUGH CELEBRATION"
 author: Angel Leung
+type: SHORT STORY
 intro: Angel talks about the differences in celebrating Lunar New Year between Hong Kong and Melbourne, and how she maintains a sense of connection through simple rituals.
 image: /assets/images/angel/angel.png
 images:
@@ -11,6 +12,8 @@ images:
 ---
 
 For me, celebrating Lunar New Year in Melbourne just does not hit the same. Back in Hong Kong, the whole environment shifts during this period. The festive atmosphere and excitement are present everywhere you go. It felt as if everyone was part of the celebration. Here in Melbourne, the energy feels more {% bold "belonging" %} and {% bold "diluted" %}. There are still traces of festive spirit, though they appear limited to only areas with larger Asian populations. Beyond that, the rest of the city just feels like every other day.
+{% image images[0].src, images[0].caption %}
+{% image images[1].src, images[1].caption %}
 
 What makes the biggest difference, in my experience, is the {% bold "absence" %} of extended family. Growing up, Lunar New Year has always been tied to huge family gatherings and getting to meet relatives you didn’t even know you had. Celebrating with only my immediate family and a few friends here in Australia, again, makes the festival feel a little dimmer, especially when my parents aren’t really the type to go all out on this holiday. Everything I’ve learnt about Lunar New Year came from my grandparents, so without their presence and guidance, the celebration just feels {% bold "incomplete" %}.
 

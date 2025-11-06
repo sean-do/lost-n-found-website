@@ -1,8 +1,7 @@
-@use "utilities" as u;
-@use "variables" as v;
-@use "type";
+@use "../utilities" as u;
+@use "../tokens" as v;
 
-.form__button {
+.button-main {
   position: relative;
   width: min-content;
   background-color: transparent;
@@ -15,10 +14,17 @@
   font-weight: 700;
   transition: background-color 400ms ease;
 
-  &:hover {
-    background-color: var(--cl-stroke);
-    font-weight: 900;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--cl-stroke);
+      font-weight: 900;
+    }
   }
+}
+
+.button-main.active {
+  background-color: var(--cl-stroke);
+  font-weight: 900;
 }
 
 .colour-toggle {

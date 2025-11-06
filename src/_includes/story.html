@@ -8,7 +8,30 @@ layout: "base.html"
 {# BODY #}
 <div class="container-main__body">
   <p class="text-intro">{{ intro }}</p>
-  <div class="text-body {% if type %}text-body--{{ type }}{% endif %}">
+  <div class="text-body {% if type == 'INTERVIEW' %}text-body--qa{% endif %}">
     {{ content | safe }}
   </div>
 </div>
+
+{% set prev = collections.post | getPreviousCollectionItem %}
+{% set next = collections.post | getNextCollectionItem %}
+
+<nav class="body-nav">
+  <ul>
+    {% if prev %}
+      <li>
+        <a href="{{ prev.url }}" class="nav-links__link"
+          >{% highlight "Previous", "text-body" %}</a
+        >
+      </li>
+    {% endif %}
+
+    {% if next %}
+      <li>
+        <a href="{{ next.url }}" class="nav-links__link"
+          >{% highlight "Next", "text-body" %}</a
+        >
+      </li>
+    {% endif %}
+  </ul>
+</nav>

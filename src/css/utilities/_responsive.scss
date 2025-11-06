@@ -1,0 +1,9 @@
+@use "../tokens/variables" as v;
+@use "sass:map";
+
+@mixin responsive($breakpoint) {
+  $value: map.get(v.$breakpoints, $breakpoint);
+  @media (max-width: #{$value}) {
+    @content;
+  }
+}

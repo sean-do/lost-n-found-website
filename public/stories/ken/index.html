@@ -16,8 +16,8 @@
   <body class="ken">
     <div class="container-main">
       
-      <div class="container-main__nav"><div class="container-nav">
-  <nav class="colour-toggle">
+      <div class="container-main__nav"><nav class="container-nav-top">
+  <div class="colour-toggle">
     <button
       class="colour-toggle__button toggle-grayscale"
       aria-label="Switch to grayscale mode"
@@ -34,170 +34,181 @@
     >
       <img src="/assets/images/logo-2.svg" alt="lost n found logo colour" />
     </button>
-  </nav>
+  </div>
+  <button id="menu-button" class="button-main">MENU</button>
+</nav>
 
-  <nav class="container-nav">
-    <ul class="nav-links">
-      <li class="nav-links__item">
-        <a
-          href="/"
-          class="nav-links__link "
-          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+<nav class="container-nav-links">
+  <ul class="nav-links">
+    <li class="nav-links__item">
+      <a
+        href="/"
+        class="nav-links__link "
+        ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-mu3od9y" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-7fucnff" x="50%" y="100%" text-anchor="middle">
        Home
       </text>
     </defs>
-    <use href="#highlightText-mu3od9y" class="text-highlight-stroke" />
-    <use href="#highlightText-mu3od9y" class="text-highlight-fill" />
+    <use href="#highlightText-7fucnff" class="text-highlight-stroke" />
+    <use href="#highlightText-7fucnff" class="text-highlight-fill" />
   </svg></a
-        >
-      </li>
-      <li class="nav-links__item">
-        <a
-          href="/stories/jen"
-          class="nav-links__link active"
-        >
-          <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+      >
+    </li>
+    <div class="text-center">/</div>
+    <li class="nav-links__item text-center">
+      <a
+        href="/stories/jen"
+        class="nav-links__link active"
+      >
+        <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-db87gie" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-fywaklm" x="50%" y="100%" text-anchor="middle">
        Read
       </text>
     </defs>
-    <use href="#highlightText-db87gie" class="text-highlight-stroke" />
-    <use href="#highlightText-db87gie" class="text-highlight-fill" />
+    <use href="#highlightText-fywaklm" class="text-highlight-stroke" />
+    <use href="#highlightText-fywaklm" class="text-highlight-fill" />
   </svg>
-        </a>
-      </li>
-      <li class="nav-links__item">
-        <a
-          href="/contribute"
-          class="nav-links__link "
-          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
+      </a>
+    </li>
+    <div class="text-center">/</div>
+    <li class="nav-links__item">
+      <a
+        href="/contribute"
+        class="nav-links__link "
+        ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
     <defs>
-      <text id="highlightText-lhlg8pq" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-ngxiu5m" x="50%" y="100%" text-anchor="middle">
        Contribute
       </text>
     </defs>
-    <use href="#highlightText-lhlg8pq" class="text-highlight-stroke" />
-    <use href="#highlightText-lhlg8pq" class="text-highlight-fill" />
+    <use href="#highlightText-ngxiu5m" class="text-highlight-stroke" />
+    <use href="#highlightText-ngxiu5m" class="text-highlight-fill" />
   </svg></a
-        >
-      </li>
-    </ul>
+      >
+    </li>
+  </ul>
 
-    <ul class="nav-articles"><li>
-          <a
-            class="article-link "
-            href="/stories/jen/"
-          >
-            <div class="article-link__number">
-              <span
-                >01</span
-              >
+  <ul class="nav-articles"><li>
+        <a
+          class="article-link "
+          href="/stories/jen/"
+        >
+          <div class="article-link__number">
+            <span
+              >01</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING COMFORT <span class="text-no-wrap">BEYOND LABELS</span>
             </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING COMFORT BEYOND&nbsp;LABELS
-              </div>
-              <div class="article-link__author">(Jennifer Chen)</div>
+            <div class="article-link__author">(Jennifer Chen)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link active"
+          href="/stories/ken/"
+        >
+          <div class="article-link__number">
+            <span
+              >02</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING CONNECTION <span class="text-no-wrap">THROUGH COMMUNITY</span>
             </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link active"
-            href="/stories/ken/"
-          >
-            <div class="article-link__number">
-              <span
-                >02</span
-              >
+            <div class="article-link__author">(Kenneth Toh)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link "
+          href="/stories/maxine/"
+        >
+          <div class="article-link__number">
+            <span
+              >03</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING PRIDE <span class="text-no-wrap">AMID DIFFERENCES</span>
             </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING CONNECTION THROUGH&nbsp;COMMUNITY
-              </div>
-              <div class="article-link__author">(Kenneth Toh)</div>
+            <div class="article-link__author">(Maxine Liang)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link "
+          href="/stories/julia/"
+        >
+          <div class="article-link__number">
+            <span
+              >04</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING SELF <span class="text-no-wrap">WITH MEDIA</span>
             </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link "
-            href="/stories/maxine/"
-          >
-            <div class="article-link__number">
-              <span
-                >03</span
-              >
+            <div class="article-link__author">(Julia Park)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link "
+          href="/stories/angel/"
+        >
+          <div class="article-link__number">
+            <span
+              >05</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING HOME <span class="text-no-wrap">THROUGH CELEBRATION</span>
             </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING PRIDE AMID&nbsp;DIFFERENCES
-              </div>
-              <div class="article-link__author">(Maxine Liang)</div>
-            </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link "
-            href="/stories/julia/"
-          >
-            <div class="article-link__number">
-              <span
-                >04</span
-              >
-            </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING SELF WITH&nbsp;MEDIA
-              </div>
-              <div class="article-link__author">(Julia Park)</div>
-            </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link "
-            href="/stories/angel/"
-          >
-            <div class="article-link__number">
-              <span
-                >05</span
-              >
-            </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING HOME THROUGH&nbsp;CELEBRATION
-              </div>
-              <div class="article-link__author">(Angel Leung)</div>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
-</div>
+            <div class="article-link__author">(Angel Leung)</div>
+          </div>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 </div>
 
       
       
 
 <div class="container-main__title"><div class="container-cover">
-  <div class="container-cover__title text-display">FINDING CONNECTION THROUGH COMMUNITY</div>
-  <div class="container-cover__author">
-    <img src="/assets/images/ken/ken.png" alt="" class="container-cover__author__image" />
-    <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 14ch">
+  <div class="container-cover-text">
+    <div class="text-caption" style="margin-bottom: 8px;">
+      {INTERVIEW}
+    </div>
+
+    <div>
+      <div class="container-cover__title text-display">FINDING CONNECTION THROUGH COMMUNITY</div>
+      <div class="container-cover__author">
+        <img src="/assets/images/ken/ken.png" alt="" class="container-cover__author__image" />
+        <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 14ch">
     <defs>
-      <text id="highlightText-6d5hhnc" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-8f22x92" x="50%" y="100%" text-anchor="middle">
        by Kenneth Toh
       </text>
     </defs>
-    <use href="#highlightText-6d5hhnc" class="text-highlight-stroke" />
-    <use href="#highlightText-6d5hhnc" class="text-highlight-fill" />
+    <use href="#highlightText-8f22x92" class="text-highlight-stroke" />
+    <use href="#highlightText-8f22x92" class="text-highlight-fill" />
   </svg>
+      </div>
+    </div>
   </div>
   <div class="container-images">
     
@@ -208,7 +219,7 @@
           class="container-image__image "
         />
         <figcaption class="container-image__caption">
-          Ken at his Nusantao pop-up
+          Ken at a Nusantao pop-up
         </figcaption>
       </div>
     
@@ -235,148 +246,194 @@
 <p>Up until I was about 13, most of what I mostly consumed Eastern media, from K-pop to Taiwanese TV shows. But also around that age, I started discovering more Western content and began gravitating towards it, from YouTube personalities to music. That shift gradually shaped my mindset, and I started to see Western ways of thinking as somewhat <span class="text-highlight--red">superior</span> to Eastern ones. I unconsciously prioritised consuming more Western media, dreaming about traveling to Western countries, etc. At the time, I didn’t think I was <span class="text-highlight--red">avoiding</span> connecting with my heritage Chinese culture. But looking back now, I can see that there was a clear shift in my mindset which might have quietly <span class="text-highlight--red">distanced</span> me from it.</p>
 <p>As I grew older, while still consuming Western media, I <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-uxugjo1" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-ynv6ymw" x="50%" y="100%" text-anchor="middle">
 rekindled
 </text>
 </defs>
-<use href="#highlightText-uxugjo1" class="text-highlight-stroke" />
-<use href="#highlightText-uxugjo1" class="text-highlight-fill" />
+<use href="#highlightText-ynv6ymw" class="text-highlight-stroke" />
+<use href="#highlightText-ynv6ymw" class="text-highlight-fill" />
 </svg> my relationship with Eastern media and began appreciating its values again. When I moved to Australia from Singapore, that was when I really started prioritising my <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 10ch">
 <defs>
-<text id="highlightText-rc7bz3e" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-fo576eq" x="50%" y="100%" text-anchor="middle">
 connection
 </text>
 </defs>
-<use href="#highlightText-rc7bz3e" class="text-highlight-stroke" />
-<use href="#highlightText-rc7bz3e" class="text-highlight-fill" />
+<use href="#highlightText-fo576eq" class="text-highlight-stroke" />
+<use href="#highlightText-fo576eq" class="text-highlight-fill" />
 </svg> with my heritage culture. Being away from home made me realise how much I had taken it for granted. Since then, I’ve made it a top priority to not lose connection with my heritage culture.</p>
 <p class="text-question">How was your experience when you first came to Australia?</p>
 <p>Coming from Singapore, my first days in Australia were definitely a <span class="text-highlight--red">struggle</span>. The culture of small talk felt jarring — having to say “how are you?” to strangers gave me <span class="text-highlight--red">anxiety</span>, because in my culture, we’re not used to that kind of openness, especially with people we don’t know. On top of that, I often felt <span class="text-highlight--red">misunderstood</span> or <span class="text-highlight--red">left out</span> in conversations with locals, since they spoke quickly and there was a clear <span class="text-highlight--red">disconnect</span> in the way we communicated. I definitely felt the <span class="text-highlight--red">pressure</span> to assimilate, not only because one of my goals in coming to Australia was to get more <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
 <defs>
-<text id="highlightText-ita6bp2" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-u1nsjyj" x="50%" y="100%" text-anchor="middle">
 comfort
 </text>
 </defs>
-<use href="#highlightText-ita6bp2" class="text-highlight-stroke" />
-<use href="#highlightText-ita6bp2" class="text-highlight-fill" />
+<use href="#highlightText-u1nsjyj" class="text-highlight-stroke" />
+<use href="#highlightText-u1nsjyj" class="text-highlight-fill" />
 </svg>able with conversation, but also because I didn’t want to be in another country without immersing myself in its culture. I started to feel more at <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 4ch">
 <defs>
-<text id="highlightText-hgp68fd" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-eobyfxm" x="50%" y="100%" text-anchor="middle">
 ease
 </text>
 </defs>
-<use href="#highlightText-hgp68fd" class="text-highlight-stroke" />
-<use href="#highlightText-hgp68fd" class="text-highlight-fill" />
+<use href="#highlightText-eobyfxm" class="text-highlight-stroke" />
+<use href="#highlightText-eobyfxm" class="text-highlight-fill" />
 </svg> when I began working part-time and made friends who were locals, which helped me adjust and build <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 10ch">
 <defs>
-<text id="highlightText-25ag64h" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-6uzmxxi" x="50%" y="100%" text-anchor="middle">
 confidence
 </text>
 </defs>
-<use href="#highlightText-25ag64h" class="text-highlight-stroke" />
-<use href="#highlightText-25ag64h" class="text-highlight-fill" />
+<use href="#highlightText-6uzmxxi" class="text-highlight-stroke" />
+<use href="#highlightText-6uzmxxi" class="text-highlight-fill" />
 </svg>. Now, I’m much more <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
 <defs>
-<text id="highlightText-q3t6i83" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-q73f4ja" x="50%" y="100%" text-anchor="middle">
 comfort
 </text>
 </defs>
-<use href="#highlightText-q3t6i83" class="text-highlight-stroke" />
-<use href="#highlightText-q3t6i83" class="text-highlight-fill" />
+<use href="#highlightText-q73f4ja" class="text-highlight-stroke" />
+<use href="#highlightText-q73f4ja" class="text-highlight-fill" />
 </svg>able with small talks and I’m definitely more open with the things I talk about.</p>
 <p class="text-question">You mentioned that you started prioritising your heritage culture after the move. How has being away from home inspired you to stay connected to your heritage culture?</p>
 <p>As cliché as it sounds, distance really does make the heart grow fonder. It sucks that it took me being away from home to truly appreciate my culture, but being in Melbourne has made me more intentional about staying <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-yqdejz2" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-w4pa2k9" x="50%" y="100%" text-anchor="middle">
 connected
 </text>
 </defs>
-<use href="#highlightText-yqdejz2" class="text-highlight-stroke" />
-<use href="#highlightText-yqdejz2" class="text-highlight-fill" />
+<use href="#highlightText-w4pa2k9" class="text-highlight-stroke" />
+<use href="#highlightText-w4pa2k9" class="text-highlight-fill" />
 </svg> to it. I particularly miss the festivities, like celebrating Lunar New Year, which I now try to do through small gatherings and celebrations with friends. I’m also lucky to be surrounded by friends with Eastern heritage who value their own cultures and actively seek ways to stay connected, which <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-rge7oa2" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-5xsnsw4" x="50%" y="100%" text-anchor="middle">
 motivates
 </text>
 </defs>
-<use href="#highlightText-rge7oa2" class="text-highlight-stroke" />
-<use href="#highlightText-rge7oa2" class="text-highlight-fill" />
+<use href="#highlightText-5xsnsw4" class="text-highlight-stroke" />
+<use href="#highlightText-5xsnsw4" class="text-highlight-fill" />
 </svg> me to do the same.</p>
-<p>Beyond that, Melbourne has a growing community of creatives—like Thread, Chuleo Club, and Congee Social Club—that create spaces for people to connect with culture, and being part of that scene has been really meaningful. For me, connecting to my heritage culture also means connecting to my family, since they regularly practice cultural traditions and activities. On top of that, I run Nusantao Giftshop, which focuses on celebrating Southeast Asian design. Through pop-ups and market stalls, I’ve met many people who connect deeply with the works I showcase. Those moments create a sense of community and belonging, making me feel closer to my heritage even while I’m far away from home.</p>
+<p>Beyond that, Melbourne has a growing community of creatives—like Thread, Chuleo Club, and Congee Social Club—that create spaces for people to connect with culture, and being part of that scene has been really meaningful. For me, connecting to my heritage culture also means connecting to my family, since they regularly practice cultural traditions and activities. On top of that, I run Nusantao Giftshop, which focuses on celebrating Southeast Asian design. Through pop-ups and market stalls, I’ve met many people who connect deeply with the works I showcase. Those moments create a sense of community and belonging, making me feel closer to my heritage even while I’m far away from home. <div class="container-image">
+<img class="container-image__image " src="/assets/images/ken/ken-nusantao.png" alt="">
+<figcaption class="container-image__caption">Ken at a Nusantao pop-up</figcaption>
+</div></p>
 <p class="text-question">In what ways do you think friends and family shape your relationship with your cultural identity?</p>
 <p>Being away from home, my main source of support in connecting with my cultural identity has been my friends. As mentioned previously, I am lucky to be surrounded by friends who value and are <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 5ch">
 <defs>
-<text id="highlightText-93pi41r" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-jd58hrk" x="50%" y="100%" text-anchor="middle">
 proud
 </text>
 </defs>
-<use href="#highlightText-93pi41r" class="text-highlight-stroke" />
-<use href="#highlightText-93pi41r" class="text-highlight-fill" />
+<use href="#highlightText-jd58hrk" class="text-highlight-stroke" />
+<use href="#highlightText-jd58hrk" class="text-highlight-fill" />
 </svg> of their cultures, and who are also keen on learning about other cultures. Being around them makes me more <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-sqljd3t" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-his27ai" x="50%" y="100%" text-anchor="middle">
 receptive
 </text>
 </defs>
-<use href="#highlightText-sqljd3t" class="text-highlight-stroke" />
-<use href="#highlightText-sqljd3t" class="text-highlight-fill" />
+<use href="#highlightText-his27ai" class="text-highlight-stroke" />
+<use href="#highlightText-his27ai" class="text-highlight-fill" />
 </svg> to my own cultural identity and motivates me to stay <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-t9i0ejj" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-ztayf6l" x="50%" y="100%" text-anchor="middle">
 connected
 </text>
 </defs>
-<use href="#highlightText-t9i0ejj" class="text-highlight-stroke" />
-<use href="#highlightText-t9i0ejj" class="text-highlight-fill" />
+<use href="#highlightText-ztayf6l" class="text-highlight-stroke" />
+<use href="#highlightText-ztayf6l" class="text-highlight-fill" />
 </svg> with it. My family back home also practices cultural traditions, which gives me additional ways to engage with my heritage. Generally, just being around like-minded people who are interested in their own cultures makes a huge difference. Culture is inherently connected to community and the people around you, so if you lack that, it can naturally be more <span class="text-highlight--red">difficult</span> to feel connected to your cultural identity.</p>
 <p class="text-question">If you could give an advice to people who are struggling with their cultural identities, what would it be?</p>
 <p>For anyone struggling with their cultural identity, I would advise taking the time to reflect and ask yourself why you feel <span class="text-highlight--red">disconnect</span>. Is it because you’re trying to conform to Western standards, or because you’ve never had the space to explore your heritage fully? Actively seeking out ways to engage with your heritage culture, through food, festivals, language, or communities, can make a huge difference. At the same time, allow yourself to embrace the culture you’re living in; your identity is <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
 <defs>
-<text id="highlightText-uzzc0fj" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-8pu0w1c" x="50%" y="100%" text-anchor="middle">
 layered
 </text>
 </defs>
-<use href="#highlightText-uzzc0fj" class="text-highlight-stroke" />
-<use href="#highlightText-uzzc0fj" class="text-highlight-fill" />
+<use href="#highlightText-8pu0w1c" class="text-highlight-stroke" />
+<use href="#highlightText-8pu0w1c" class="text-highlight-fill" />
 </svg> and <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 8ch">
 <defs>
-<text id="highlightText-8ylbkz9" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-okiptam" x="50%" y="100%" text-anchor="middle">
 flexible
 </text>
 </defs>
-<use href="#highlightText-8ylbkz9" class="text-highlight-stroke" />
-<use href="#highlightText-8ylbkz9" class="text-highlight-fill" />
+<use href="#highlightText-okiptam" class="text-highlight-stroke" />
+<use href="#highlightText-okiptam" class="text-highlight-fill" />
 </svg>. You can be proud of your cultural heritage, and at the same time, be immersed in your host culture. Being intentional, reflective, and surrounding yourself with people who value culture can help you feel more confident and grounded in who you are.</p>
 <p class="text-question">How do you think food can connect people? Do you have a dish that screams “home” to you?</p>
 <p>Hainanese chicken rice is my definite go-to meal when I miss home. The fragrant rice steamed in chicken stock and aromatics, the tender and flavorful chicken, and the spicy, tangy chili always remind me of Singapore. Whenever I miss home, I go to Gai Wong in North Melbourne to satisfy that craving.</p>
+<div class="container-image">
+    <img class="container-image__image " src="/assets/images/ken/gai-wong.png" alt="">
+    <figcaption class="container-image__caption">Hainanese Chicken Rice at Gai Wong</figcaption>
+    </div>
 <p>I’m a big foodie, so I think food is one of the most simple but powerful ways people can connect to their culture. Who doesn’t love a good feed? Food creates an immediate point of <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 10ch">
 <defs>
-<text id="highlightText-36h9xhh" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-uiqzbxg" x="50%" y="100%" text-anchor="middle">
 connection
 </text>
 </defs>
-<use href="#highlightText-36h9xhh" class="text-highlight-stroke" />
-<use href="#highlightText-36h9xhh" class="text-highlight-fill" />
+<use href="#highlightText-uiqzbxg" class="text-highlight-stroke" />
+<use href="#highlightText-uiqzbxg" class="text-highlight-fill" />
 </svg> because everyone eats. It becomes a universal language that <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
 <defs>
-<text id="highlightText-okidtj2" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-j6jzsye" x="50%" y="100%" text-anchor="middle">
 bridges
 </text>
 </defs>
-<use href="#highlightText-okidtj2" class="text-highlight-stroke" />
-<use href="#highlightText-okidtj2" class="text-highlight-fill" />
+<use href="#highlightText-j6jzsye" class="text-highlight-stroke" />
+<use href="#highlightText-j6jzsye" class="text-highlight-fill" />
 </svg> backgrounds. Tasting a dish can transport people back to home, childhood, or their family. Sharing food also allows for cultural exchange, letting people experience each other’s traditions in a tangible way, often more directly than through words or media. Beyond that, meals, whether home-cooked or at festivals and markets, create spaces for people to gather, celebrate, and bond. Even something as simple as a favourite dish can evoke memories, create a sense of <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 7ch">
 <defs>
-<text id="highlightText-tcguy90" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-xb7d24z" x="50%" y="100%" text-anchor="middle">
 comfort
 </text>
 </defs>
-<use href="#highlightText-tcguy90" class="text-highlight-stroke" />
-<use href="#highlightText-tcguy90" class="text-highlight-fill" />
+<use href="#highlightText-xb7d24z" class="text-highlight-stroke" />
+<use href="#highlightText-xb7d24z" class="text-highlight-fill" />
 </svg>, and bring people together, no matter where they’re from.</p>
 
   </div>
 </div>
+
+
+
+
+<nav class="body-nav">
+  <ul>
+    
+      <li>
+        <a href="/stories/jen/" class="nav-links__link"
+          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 8ch">
+    <defs>
+      <text id="highlightText-vq7cx6m" x="50%" y="100%" text-anchor="middle">
+       Previous
+      </text>
+    </defs>
+    <use href="#highlightText-vq7cx6m" class="text-highlight-stroke" />
+    <use href="#highlightText-vq7cx6m" class="text-highlight-fill" />
+  </svg></a
+        >
+      </li>
+    
+
+    
+      <li>
+        <a href="/stories/maxine/" class="nav-links__link"
+          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+    <defs>
+      <text id="highlightText-lvj4eow" x="50%" y="100%" text-anchor="middle">
+       Next
+      </text>
+    </defs>
+    <use href="#highlightText-lvj4eow" class="text-highlight-stroke" />
+    <use href="#highlightText-lvj4eow" class="text-highlight-fill" />
+  </svg></a
+        >
+      </li>
+    
+  </ul>
+</nav>
 
     </div>
     <svg style="display:none;" width="0" height="0">

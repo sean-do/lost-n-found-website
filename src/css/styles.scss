@@ -1,17 +1,47 @@
 @use "fonts";
 @use "reset";
-@use "variables";
 
-// TYPOGRAPHY
-@use "type";
-
-// COMPONENTS
-@use "components";
-@use "form";
-@use "button";
+// VARIABLES, TYPE
+@use "tokens";
 
 // UTILITIES
 @use "utilities";
 
-// CONTRIBUTE PAGE
-@use "contribute";
+// COMPONENTS
+@use "components";
+
+// LAYOUTS
+@use "layouts";
+
+body {
+  background: var(--cl-bg);
+  font: 500 var(--fs-body) fonts.$serif;
+  color: var(--cl-text-body);
+  letter-spacing: -0.03em;
+  word-spacing: -0.1em;
+  line-height: 1.1;
+  transition:
+    filter 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+  @include utilities.responsive(one-column) {
+    line-height: 1.2;
+  }
+}
+
+html.grayscale body {
+  --cl-text-body: #4e4e4e;
+  --cl-bg: white;
+  --cl-stroke: #eaeaea;
+  --cl-text-highlight: #4e4e4e;
+  img,
+  video {
+    filter: grayscale(100%) brightness(0.8) contrast(1.5);
+  }
+
+  .colour-toggle__button {
+    &.toggle-colour:hover img {
+      filter: none;
+    }
+  }
+}

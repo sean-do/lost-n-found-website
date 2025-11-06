@@ -1,6 +1,7 @@
 ---
 title: FINDING PRIDE AMID DIFFERENCES
 author: Maxine Liang
+type: REFLECTION
 intro: Maxine unpacks how shifting between different education systems has shaped her relationship with language, and the ongoing tension between disconnection and belonging.
 image: /assets/images/maxine/maxine.png
 images:
@@ -19,3 +20,4 @@ The distance extends beyond language. As I’ve grown older, my morals and value
 After moving to Melbourne, the differences became even bigger. One of the most noticeable was how people of my ethnicity navigated foreign or international environments. Although it’s a nuanced and maybe generalised observation, their behaviour here often reflects a strong sense of collectivist ideology, something that I {% bold "struggle" %} to find comfort in. As I’ve continued living in Melbourne, that {% bold "discomfort" %} has gradually led me to diverge from the community. It pains me to see patterns that place people from my heritage culture into a category. As someone who shares that background, I can recognise the mannerisms and behaviours coming from the same education, language, and generational experiences. Yet, it’s still quite frustrating to see these familiar traits become the dominant representation of my people.
 
 I’m still learning to navigate the cultural gap that I experience between my cultural identity and my heritage culture. Even so, I do find myself {% highlight "proudly" %} sharing my heritage culture with others who are less familiar with it, perhaps out of nostalgia or a sense of {% highlight "belonging" %} that I feel from time to time. Though I might have diverged from what’s traditionally considered “Chinese”, the fragments of my heritage culture remain as a strong foundation of who I am.
+{% image images[0].src, images[0].caption, images[0].type %}

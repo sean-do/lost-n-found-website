@@ -1,0 +1,25 @@
+@use "../tokens" as v;
+@use "../utilities" as u;
+
+.container-main .body-nav {
+  display: none;
+  @include u.responsive(one-column) {
+    display: block;
+    width: 100%;
+    padding: 0;
+    ul {
+      width: 100%;
+      @include u.flex(row, 0, space-between, stretch);
+      border-top: 2px dotted var(--cl-text-body);
+      border-bottom: 2px dotted var(--cl-text-body);
+    }
+    li {
+      flex: 1;
+      text-align: center;
+      padding: var(--pd-btn);
+      &:not(:last-child) {
+        border-right: 2px dotted var(--cl-text-body);
+      }
+    }
+  }
+}

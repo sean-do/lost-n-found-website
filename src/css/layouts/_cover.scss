@@ -1,0 +1,67 @@
+@use "../tokens" as v;
+@use "../utilities" as u;
+
+// TITLE PAGE CONTAINERS
+.container-cover {
+  @include u.flex(column, 0, start, center);
+  width: 100%;
+
+  &-text {
+    @include u.flex(column, 0, start, center);
+    // height: calc(100svh - var(--pd-body) * 2);
+    // > div:first-child {
+    //   flex-grow: 2;
+    //   @include u.flex(column, 0, center);
+    // }
+  }
+  &__title {
+    word-spacing: 9999px;
+  }
+  &__author {
+    // move up so it overlaps with title
+    font-style: italic;
+    transform: translateY(-20%);
+    @include u.flex(
+      $direction: column,
+      $justify-content: end,
+      $align-items: center
+    );
+    position: relative;
+    // --image-width: 120px;
+    --image-height: 120px;
+    height: var(--image-height);
+    width: 100%;
+
+    @include u.responsive(one-column) {
+      --image-height: clamp(6.25rem, calc(17.9775vw + 2.0365rem), 11.25rem);
+    }
+
+    &__image {
+      position: absolute;
+      object-fit: contain;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: var(--image-height);
+      width: auto;
+      z-index: -1;
+    }
+  }
+
+  @include u.responsive(one-column) {
+    height: 100%;
+
+    &-text {
+      height: 100%;
+      justify-content: center;
+    }
+
+    &__title {
+      word-spacing: 0;
+    }
+
+    .container-images {
+      display: none;
+    }
+  }
+}

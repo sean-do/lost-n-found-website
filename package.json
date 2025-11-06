@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "css": "sass src/css/styles.scss:src/css/styles.css",
+    "watch:css": "sass --watch src/css/styles.scss:src/css/styles.css"
   },
   "keywords": [],
   "author": "",

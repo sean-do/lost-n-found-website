@@ -1,6 +1,5 @@
-@use "utilities" as u;
-@use "variables" as v;
-@use "type";
+@use "../utilities" as u;
+@use "../tokens" as v;
 
 .form {
   @include u.flex(column, var(--gap-secondary));
@@ -35,12 +34,18 @@
   label:not(.radio-group label),
   legend {
     @extend .text-subheading;
-    margin-bottom: var(--gap-subheading);
+    margin-bottom: var(--mg-subheading);
+
+    @include u.responsive(one-column) {
+      font-size: var(--fs-caption);
+    }
   }
 
   // radio label
   .radio-group {
     @include u.flex;
+    flex-wrap: wrap;
+    row-gap: var(--mg-subheading);
 
     // radio "buttons"
     label {
@@ -103,5 +108,6 @@
     max-height: 5em;
     padding: var(--pd-btn);
     border: 2px dotted var(--cl-text-body);
+    margin-top: var(--gap-secondary);
   }
 }

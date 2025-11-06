@@ -1,7 +1,7 @@
 ---
 title: "FINDING SELF WITH MEDIA"
 author: Julia Park
-type: qa
+type: INTERVIEW
 intro: Julia reflects on how the global craze for Korean media has shaped her sense of self, and the complex realities of representation, stereotypes and what it means to be Korean Australian.
 image: /assets/images/julia/julia.png
 images:
@@ -17,6 +17,7 @@ images:
 When comparing the media I consumed in high school to what I watch now, I can see a noticeable shift. Back then, shows like Gossip Girl were popular. Although I wasn’t deeply invested in them, I watched just enough to join conversations with my friends. Occasionally, I’d watch Korean variety shows or popular K-Dramas with my family. 2016, in particular, was the era of K-Dramas (iykyk), I binged countless series on piracy websites before Netflix really took off. At the time, I didn’t have many people at school who shared that interest, so it felt like a personal, almost {% bold "guilty" %} pleasure. Now, it’s completely different. Many of my friends actively watch Korean dramas, movies, and other media, and it’s so easily accessible. It still feels {% highlight "surreal" %} sometimes. There are even moments when others know more about recent shows or Korean slang than I do, which occasionally makes me question my own sense of “Korean-ness.”
 
 When it comes to music, I have a vivid memory from primary school in 2012, when Psy’s Gangnam Style was everywhere. My classmates would request it at school discos and even memorise the lyrics. But instead of feeling {% highlight "proud" %} that Korean culture was being recognised, I remember feeling slightly {% bold "uncomfortable" %}, it seemed like my classmates were treating it as a {% bold "joke" %}. The song itself is playful and humorous, but seeing people laugh at the lyrics made me wonder if they were laughing at my language. Despite that, Korean music has always been part of my life, and I listen to it even more now, especially with K-pop’s global rise. It’s fascinating to reflect on how quickly things have changed from a time when people barely knew where Korea was, to now, when so many are familiar with the language, culture, and media.
+{% image images[0].src, images[0].caption %}
 
 {% question "Has the global popularity of K-pop, K-dramas, or Korean culture changed the way you see your own identity or how others see you?" %}
 
@@ -29,6 +30,7 @@ In some ways, the global popularity of Korean culture has had a positive impact 
 {% question "Has media consumption helped you learn about your heritage culture or influenced your feelings about it at all?" %}
 
 Korean variety shows are immensely popular, featuring celebrities, comedians, singers, and even athletes. They often include interviews, light-hearted games, and opportunities for guests to promote their latest projects or themselves. I’ve always enjoyed watching these shows, both with my family and on my own. Produced and funded by major broadcasting networks, they’re a staple of Korean entertainment and watched by nearly everyone in the country.
+{% image images[1].src, images[1].caption, images[1].type %}
 
 Personally, watching Korean people speak naturally in real time (outside the scripted dialogue of dramas) has {% highlight "helped" %} me develop a stronger grasp of conversational Korean. Compared to my older sisters, I watch far more variety shows and short-form Korean content, which I think has {% highlight "improved" %} my listening comprehension. While I sometimes still mix up similar-sounding words, I’m generally able to follow conversations quite well. My sisters, on the other hand, have stronger speaking and reading skills, so we balance each other out in that way.
 

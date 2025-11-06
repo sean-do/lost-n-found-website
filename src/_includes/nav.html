@@ -1,5 +1,5 @@
-<div class="container-nav">
-  <nav class="colour-toggle">
+<nav class="container-nav-top">
+  <div class="colour-toggle">
     <button
       class="colour-toggle__button toggle-grayscale"
       aria-label="Switch to grayscale mode"
@@ -16,55 +16,58 @@
     >
       <img src="/assets/images/logo-2.svg" alt="lost n found logo colour" />
     </button>
-  </nav>
+  </div>
+  <button id="menu-button" class="button-main">MENU</button>
+</nav>
 
-  <nav class="container-nav">
-    <ul class="nav-links">
-      <li class="nav-links__item">
+<nav class="container-nav-links">
+  <ul class="nav-links">
+    <li class="nav-links__item">
+      <a
+        href="/"
+        class="nav-links__link {% if page.url == '/' %}active{% endif %}"
+        >{% highlight "Home", "text-body" %}</a
+      >
+    </li>
+    <div class="text-center">/</div>
+    <li class="nav-links__item text-center">
+      <a
+        href="/stories/jen"
+        class="nav-links__link {% if '/stories' in page.url %}active{% endif %}"
+      >
+        {% highlight "Read", "text-body" %}
+      </a>
+    </li>
+    <div class="text-center">/</div>
+    <li class="nav-links__item">
+      <a
+        href="/contribute"
+        class="nav-links__link {% if page.url == '/contribute/' %}active{% endif %}"
+        >{% highlight "Contribute", "text-body" %}</a
+      >
+    </li>
+  </ul>
+
+  <ul class="nav-articles">
+    {%- for story in collections.post -%}
+      <li>
         <a
-          href="/"
-          class="nav-links__link {% if page.url == '/' %}active{% endif %}"
-          >{% highlight "Home", "text-body" %}</a
+          class="article-link {% if page.url == story.url %}active{% endif %}"
+          href="{{ story.url | url }}"
         >
-      </li>
-      <li class="nav-links__item">
-        <a
-          href="/stories/jen"
-          class="nav-links__link {% if '/stories' in page.url %}active{% endif %}"
-        >
-          {% highlight "Read", "text-body" %}
+          <div class="article-link__number">
+            <span
+              >{{ "0" + loop.index if loop.index < 10 else loop.index }}</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              {{ story.data.title | fixRunt | safe }}
+            </div>
+            <div class="article-link__author">({{ story.data.author }})</div>
+          </div>
         </a>
       </li>
-      <li class="nav-links__item">
-        <a
-          href="/contribute"
-          class="nav-links__link {% if page.url == '/contribute/' %}active{% endif %}"
-          >{% highlight "Contribute", "text-body" %}</a
-        >
-      </li>
-    </ul>
-
-    <ul class="nav-articles">
-      {%- for story in collections.post -%}
-        <li>
-          <a
-            class="article-link {% if page.url == story.url %}active{% endif %}"
-            href="{{ story.url | url }}"
-          >
-            <div class="article-link__number">
-              <span
-                >{{ "0" + loop.index if loop.index < 10 else loop.index }}</span
-              >
-            </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                {{ story.data.title | fixRunt | safe }}
-              </div>
-              <div class="article-link__author">({{ story.data.author }})</div>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+    {% endfor %}
+  </ul>
+</nav>

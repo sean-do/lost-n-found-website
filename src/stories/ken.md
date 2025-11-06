@@ -1,12 +1,12 @@
 ---
 title: "FINDING CONNECTION THROUGH COMMUNITY"
 author: Kenneth Toh
-type: qa
+type: INTERVIEW
 intro: Ken talks about his journey of navigating a new culture as a Singaporean, and how community, food and intentional reflection have helped him rebuild a sense of connection to both his heritage and host cultures.
 image: /assets/images/ken/ken.png
 images:
   - src: /assets/images/ken/ken-nusantao.png
-    caption: "Ken at his Nusantao pop-up"
+    caption: "Ken at a Nusantao pop-up"
   - src: /assets/images/ken/gai-wong.png
     caption: "Hainanese Chicken Rice at Gai Wong"
 ---
@@ -25,7 +25,7 @@ Coming from Singapore, my first days in Australia were definitely a {% bold "str
 
 As cliché as it sounds, distance really does make the heart grow fonder. It sucks that it took me being away from home to truly appreciate my culture, but being in Melbourne has made me more intentional about staying {% highlight "connected" %} to it. I particularly miss the festivities, like celebrating Lunar New Year, which I now try to do through small gatherings and celebrations with friends. I’m also lucky to be surrounded by friends with Eastern heritage who value their own cultures and actively seek ways to stay connected, which {% highlight "motivates" %} me to do the same.
 
-Beyond that, Melbourne has a growing community of creatives—like Thread, Chuleo Club, and Congee Social Club—that create spaces for people to connect with culture, and being part of that scene has been really meaningful. For me, connecting to my heritage culture also means connecting to my family, since they regularly practice cultural traditions and activities. On top of that, I run Nusantao Giftshop, which focuses on celebrating Southeast Asian design. Through pop-ups and market stalls, I’ve met many people who connect deeply with the works I showcase. Those moments create a sense of community and belonging, making me feel closer to my heritage even while I’m far away from home.
+Beyond that, Melbourne has a growing community of creatives—like Thread, Chuleo Club, and Congee Social Club—that create spaces for people to connect with culture, and being part of that scene has been really meaningful. For me, connecting to my heritage culture also means connecting to my family, since they regularly practice cultural traditions and activities. On top of that, I run Nusantao Giftshop, which focuses on celebrating Southeast Asian design. Through pop-ups and market stalls, I’ve met many people who connect deeply with the works I showcase. Those moments create a sense of community and belonging, making me feel closer to my heritage even while I’m far away from home. {% image images[0].src, images[0].caption %}
 
 {% question "In what ways do you think friends and family shape your relationship with your cultural identity?" %}
 
@@ -38,5 +38,6 @@ For anyone struggling with their cultural identity, I would advise taking the ti
 {% question "How do you think food can connect people? Do you have a dish that screams “home” to you?" %}
 
 Hainanese chicken rice is my definite go-to meal when I miss home. The fragrant rice steamed in chicken stock and aromatics, the tender and flavorful chicken, and the spicy, tangy chili always remind me of Singapore. Whenever I miss home, I go to Gai Wong in North Melbourne to satisfy that craving.
+{% image images[1].src, images[1].caption %}
 
 I’m a big foodie, so I think food is one of the most simple but powerful ways people can connect to their culture. Who doesn’t love a good feed? Food creates an immediate point of {% highlight "connection" %} because everyone eats. It becomes a universal language that {% highlight "bridges" %} backgrounds. Tasting a dish can transport people back to home, childhood, or their family. Sharing food also allows for cultural exchange, letting people experience each other’s traditions in a tangible way, often more directly than through words or media. Beyond that, meals, whether home-cooked or at festivals and markets, create spaces for people to gather, celebrate, and bond. Even something as simple as a favourite dish can evoke memories, create a sense of {% highlight "comfort" %}, and bring people together, no matter where they’re from.

@@ -1,0 +1,36 @@
+@use "../utilities" as u;
+@use "../tokens" as v;
+
+// ABOUT PAGE
+.container-about {
+  @include u.flex(column, v.$s-xl);
+  width: 75%;
+  height: var(--content-height);
+
+  &__body {
+    // 50% of 75%
+    width: 50%;
+    transform: translateX(100%);
+    @include u.flex(column, v.$s-m);
+    li,
+    p {
+      margin-bottom: var(--mg-subheading);
+    }
+  }
+
+  @include u.responsive(collapse) {
+    width: 100%;
+  }
+
+  @include u.responsive(one-column) {
+    height: auto;
+    &__intro {
+      height: var(--content-height);
+      @include u.flex(column, 0, center, center);
+    }
+    &__body {
+      width: 100%;
+      transform: none;
+    }
+  }
+}

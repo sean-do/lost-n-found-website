@@ -16,8 +16,8 @@
   <body class="angel">
     <div class="container-main">
       
-      <div class="container-main__nav"><div class="container-nav">
-  <nav class="colour-toggle">
+      <div class="container-main__nav"><nav class="container-nav-top">
+  <div class="colour-toggle">
     <button
       class="colour-toggle__button toggle-grayscale"
       aria-label="Switch to grayscale mode"
@@ -34,170 +34,181 @@
     >
       <img src="/assets/images/logo-2.svg" alt="lost n found logo colour" />
     </button>
-  </nav>
+  </div>
+  <button id="menu-button" class="button-main">MENU</button>
+</nav>
 
-  <nav class="container-nav">
-    <ul class="nav-links">
-      <li class="nav-links__item">
-        <a
-          href="/"
-          class="nav-links__link "
-          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+<nav class="container-nav-links">
+  <ul class="nav-links">
+    <li class="nav-links__item">
+      <a
+        href="/"
+        class="nav-links__link "
+        ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-z5dkmux" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-gyaqrym" x="50%" y="100%" text-anchor="middle">
        Home
       </text>
     </defs>
-    <use href="#highlightText-z5dkmux" class="text-highlight-stroke" />
-    <use href="#highlightText-z5dkmux" class="text-highlight-fill" />
+    <use href="#highlightText-gyaqrym" class="text-highlight-stroke" />
+    <use href="#highlightText-gyaqrym" class="text-highlight-fill" />
   </svg></a
-        >
-      </li>
-      <li class="nav-links__item">
-        <a
-          href="/stories/jen"
-          class="nav-links__link active"
-        >
-          <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
+      >
+    </li>
+    <div class="text-center">/</div>
+    <li class="nav-links__item text-center">
+      <a
+        href="/stories/jen"
+        class="nav-links__link active"
+      >
+        <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-oavv54c" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-38fb8p0" x="50%" y="100%" text-anchor="middle">
        Read
       </text>
     </defs>
-    <use href="#highlightText-oavv54c" class="text-highlight-stroke" />
-    <use href="#highlightText-oavv54c" class="text-highlight-fill" />
+    <use href="#highlightText-38fb8p0" class="text-highlight-stroke" />
+    <use href="#highlightText-38fb8p0" class="text-highlight-fill" />
   </svg>
-        </a>
-      </li>
-      <li class="nav-links__item">
-        <a
-          href="/contribute"
-          class="nav-links__link "
-          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
+      </a>
+    </li>
+    <div class="text-center">/</div>
+    <li class="nav-links__item">
+      <a
+        href="/contribute"
+        class="nav-links__link "
+        ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
     <defs>
-      <text id="highlightText-w1cl864" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-sgek4nj" x="50%" y="100%" text-anchor="middle">
        Contribute
       </text>
     </defs>
-    <use href="#highlightText-w1cl864" class="text-highlight-stroke" />
-    <use href="#highlightText-w1cl864" class="text-highlight-fill" />
+    <use href="#highlightText-sgek4nj" class="text-highlight-stroke" />
+    <use href="#highlightText-sgek4nj" class="text-highlight-fill" />
   </svg></a
-        >
-      </li>
-    </ul>
+      >
+    </li>
+  </ul>
 
-    <ul class="nav-articles"><li>
-          <a
-            class="article-link "
-            href="/stories/jen/"
-          >
-            <div class="article-link__number">
-              <span
-                >01</span
-              >
+  <ul class="nav-articles"><li>
+        <a
+          class="article-link "
+          href="/stories/jen/"
+        >
+          <div class="article-link__number">
+            <span
+              >01</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING COMFORT <span class="text-no-wrap">BEYOND LABELS</span>
             </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING COMFORT BEYOND&nbsp;LABELS
-              </div>
-              <div class="article-link__author">(Jennifer Chen)</div>
+            <div class="article-link__author">(Jennifer Chen)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link "
+          href="/stories/ken/"
+        >
+          <div class="article-link__number">
+            <span
+              >02</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING CONNECTION <span class="text-no-wrap">THROUGH COMMUNITY</span>
             </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link "
-            href="/stories/ken/"
-          >
-            <div class="article-link__number">
-              <span
-                >02</span
-              >
+            <div class="article-link__author">(Kenneth Toh)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link "
+          href="/stories/maxine/"
+        >
+          <div class="article-link__number">
+            <span
+              >03</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING PRIDE <span class="text-no-wrap">AMID DIFFERENCES</span>
             </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING CONNECTION THROUGH&nbsp;COMMUNITY
-              </div>
-              <div class="article-link__author">(Kenneth Toh)</div>
+            <div class="article-link__author">(Maxine Liang)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link "
+          href="/stories/julia/"
+        >
+          <div class="article-link__number">
+            <span
+              >04</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING SELF <span class="text-no-wrap">WITH MEDIA</span>
             </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link "
-            href="/stories/maxine/"
-          >
-            <div class="article-link__number">
-              <span
-                >03</span
-              >
+            <div class="article-link__author">(Julia Park)</div>
+          </div>
+        </a>
+      </li>
+    <li>
+        <a
+          class="article-link active"
+          href="/stories/angel/"
+        >
+          <div class="article-link__number">
+            <span
+              >05</span
+            >
+          </div>
+          <div class="article-link__name-group">
+            <div class="article-link__title">
+              FINDING HOME <span class="text-no-wrap">THROUGH CELEBRATION</span>
             </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING PRIDE AMID&nbsp;DIFFERENCES
-              </div>
-              <div class="article-link__author">(Maxine Liang)</div>
-            </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link "
-            href="/stories/julia/"
-          >
-            <div class="article-link__number">
-              <span
-                >04</span
-              >
-            </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING SELF WITH&nbsp;MEDIA
-              </div>
-              <div class="article-link__author">(Julia Park)</div>
-            </div>
-          </a>
-        </li>
-      <li>
-          <a
-            class="article-link active"
-            href="/stories/angel/"
-          >
-            <div class="article-link__number">
-              <span
-                >05</span
-              >
-            </div>
-            <div class="article-link__name-group">
-              <div class="article-link__title">
-                FINDING HOME THROUGH&nbsp;CELEBRATION
-              </div>
-              <div class="article-link__author">(Angel Leung)</div>
-            </div>
-          </a>
-        </li>
-      
-    </ul>
-  </nav>
-</div>
+            <div class="article-link__author">(Angel Leung)</div>
+          </div>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
 </div>
 
       
       
 
 <div class="container-main__title"><div class="container-cover">
-  <div class="container-cover__title text-display">FINDING HOME THROUGH CELEBRATION</div>
-  <div class="container-cover__author">
-    <img src="/assets/images/angel/angel.png" alt="" class="container-cover__author__image" />
-    <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 14ch">
+  <div class="container-cover-text">
+    <div class="text-caption" style="margin-bottom: 8px;">
+      {SHORT STORY}
+    </div>
+
+    <div>
+      <div class="container-cover__title text-display">FINDING HOME THROUGH CELEBRATION</div>
+      <div class="container-cover__author">
+        <img src="/assets/images/angel/angel.png" alt="" class="container-cover__author__image" />
+        <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 14ch">
     <defs>
-      <text id="highlightText-8ervsbc" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-yww4xiy" x="50%" y="100%" text-anchor="middle">
        by Angel Leung
       </text>
     </defs>
-    <use href="#highlightText-8ervsbc" class="text-highlight-stroke" />
-    <use href="#highlightText-8ervsbc" class="text-highlight-fill" />
+    <use href="#highlightText-yww4xiy" class="text-highlight-stroke" />
+    <use href="#highlightText-yww4xiy" class="text-highlight-fill" />
   </svg>
+      </div>
+    </div>
   </div>
   <div class="container-images">
     
@@ -232,43 +243,76 @@
   <p class="text-intro">Angel talks about the differences in celebrating Lunar New Year between Hong Kong and Melbourne, and how she maintains a sense of connection through simple rituals.</p>
   <div class="text-body ">
     <p>For me, celebrating Lunar New Year in Melbourne just does not hit the same. Back in Hong Kong, the whole environment shifts during this period. The festive atmosphere and excitement are present everywhere you go. It felt as if everyone was part of the celebration. Here in Melbourne, the energy feels more <span class="text-highlight--red">belonging</span> and <span class="text-highlight--red">diluted</span>. There are still traces of festive spirit, though they appear limited to only areas with larger Asian populations. Beyond that, the rest of the city just feels like every other day.</p>
+<div class="container-image">
+    <img class="container-image__image " src="/assets/images/angel/hong-kong.png" alt="">
+    <figcaption class="container-image__caption">Lunar New Year in Hong Kong</figcaption>
+    </div>
+<div class="container-image">
+    <img class="container-image__image " src="/assets/images/angel/melbourne.png" alt="">
+    <figcaption class="container-image__caption">Lunar New Year in Melbourne</figcaption>
+    </div>
 <p>What makes the biggest difference, in my experience, is the <span class="text-highlight--red">absence</span> of extended family. Growing up, Lunar New Year has always been tied to huge family gatherings and getting to meet relatives you didn’t even know you had. Celebrating with only my immediate family and a few friends here in Australia, again, makes the festival feel a little dimmer, especially when my parents aren’t really the type to go all out on this holiday. Everything I’ve learnt about Lunar New Year came from my grandparents, so without their presence and guidance, the celebration just feels <span class="text-highlight--red">incomplete</span>.</p>
 <p>With that being said, I still enjoy the small yet <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 4ch">
 <defs>
-<text id="highlightText-ckdcsy0" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-f28jjj3" x="50%" y="100%" text-anchor="middle">
 cozy
 </text>
 </defs>
-<use href="#highlightText-ckdcsy0" class="text-highlight-stroke" />
-<use href="#highlightText-ckdcsy0" class="text-highlight-fill" />
+<use href="#highlightText-f28jjj3" class="text-highlight-stroke" />
+<use href="#highlightText-f28jjj3" class="text-highlight-fill" />
 </svg> rituals I’ve developed here. And as the Asian community in Melbourne grows, I can slowly feel the spirit of this holiday being brought back. While it’s not going to be the same scale, simple traditions like receiving red envelopes, eating rice cakes and having shared meals have helped me <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-74hfr0k" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-hez8q7r" x="50%" y="100%" text-anchor="middle">
 reconnect
 </text>
 </defs>
-<use href="#highlightText-74hfr0k" class="text-highlight-stroke" />
-<use href="#highlightText-74hfr0k" class="text-highlight-fill" />
+<use href="#highlightText-hez8q7r" class="text-highlight-stroke" />
+<use href="#highlightText-hez8q7r" class="text-highlight-fill" />
 </svg> and feel a sense of <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 10ch">
 <defs>
-<text id="highlightText-isv0dg9" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-w0bgd6r" x="50%" y="100%" text-anchor="middle">
 continuity
 </text>
 </defs>
-<use href="#highlightText-isv0dg9" class="text-highlight-stroke" />
-<use href="#highlightText-isv0dg9" class="text-highlight-fill" />
+<use href="#highlightText-w0bgd6r" class="text-highlight-stroke" />
+<use href="#highlightText-w0bgd6r" class="text-highlight-fill" />
 </svg> and <svg class="text-highlight" style="vertical-align: baseline; height: 0.5em; width: 9ch">
 <defs>
-<text id="highlightText-lgt29s3" x="50%" y="100%" text-anchor="middle">
+<text id="highlightText-625rxpq" x="50%" y="100%" text-anchor="middle">
 belonging
 </text>
 </defs>
-<use href="#highlightText-lgt29s3" class="text-highlight-stroke" />
-<use href="#highlightText-lgt29s3" class="text-highlight-fill" />
+<use href="#highlightText-625rxpq" class="text-highlight-stroke" />
+<use href="#highlightText-625rxpq" class="text-highlight-fill" />
 </svg> with my heritage culture. They remind me that culture doesn’t <span class="text-highlight--red">disappear</span>; it just adapts. And sometimes, just being around family and friends, speaking my language, and eating the food I grew up with is enough to make the distance feel a little smaller.</p>
 
   </div>
 </div>
+
+
+
+
+<nav class="body-nav">
+  <ul>
+    
+      <li>
+        <a href="/stories/julia/" class="nav-links__link"
+          ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 8ch">
+    <defs>
+      <text id="highlightText-s66ibkz" x="50%" y="100%" text-anchor="middle">
+       Previous
+      </text>
+    </defs>
+    <use href="#highlightText-s66ibkz" class="text-highlight-stroke" />
+    <use href="#highlightText-s66ibkz" class="text-highlight-fill" />
+  </svg></a
+        >
+      </li>
+    
+
+    
+  </ul>
+</nav>
 
     </div>
     <svg style="display:none;" width="0" height="0">

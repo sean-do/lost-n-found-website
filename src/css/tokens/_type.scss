@@ -1,28 +1,39 @@
 @use "variables" as v;
-@use "fonts";
-@use "utilities";
+@use "../fonts";
+@use "../utilities/responsive" as u;
 
 // TYPE UTILITIES
-@mixin text-center {
+.trim-sans {
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    pointer-events: none;
+  }
+
+  &::before {
+    margin-bottom: calc(-0.5lh + 0.48em);
+  }
+
+  &::after {
+    margin-top: calc(-0.5lh + 0.28em);
+  }
+}
+
+.text-center {
   text-align: center;
 }
 
 // TYPE CLASSES
-body {
-  background: var(--cl-bg);
-  font: 500 var(--fs-body) fonts.$serif;
-  color: var(--cl-text-body);
-  letter-spacing: -0.03em;
-  word-spacing: -0.1em;
-  line-height: 1.1;
-}
-
 .text-display {
-  font: 900 v.$fs-heading fonts.$sans;
+  font: 900 var(--fs-display) fonts.$sans;
   line-height: 0.9;
   letter-spacing: -0.02em;
   word-spacing: normal;
-  @include text-center;
+  text-align: center;
   -webkit-text-stroke: 0.02em var(--cl-text-body);
   margin-top: 0.1em;
   filter: url(#rounded);
@@ -36,6 +47,7 @@ body {
   font: 900 var(--fs-body) fonts.$sans;
   line-height: 1.1;
   word-spacing: 0.05em;
+  margin-bottom: var(--mg-subheading);
   @extend .trim-sans;
 }
 
@@ -47,7 +59,7 @@ body {
 }
 
 .text-body {
-  text-indent: v.$s-xl;
+  text-indent: var(--mg-indent);
   // reset indent for first paragraph, questions & paragraph right after question
   & p:first-child,
   & .text-question,
@@ -56,36 +68,51 @@ body {
   }
   // margin for q&a body
   &--qa p:not(.text-question) {
-    margin-left: v.$s-xl;
+    margin-left: var(--mg-indent);
+    @include u.responsive(one-column) {
+      margin-left: 0;
+    }
   }
 }
 
 .text-question {
-  font: 500 var(--fs-body) fonts.$sans;
+  font: 700 var(--fs-body) fonts.$sans;
   word-spacing: normal;
   margin-bottom: var(--gap-secondary);
   &:not(:first-child) {
-    margin-top: v.$s-m;
+    margin-top: var(--gap-main);
+  }
+
+  @include u.responsive(one-column) {
+    font-size: 1.1em;
+    line-height: 1.1;
   }
 }
 
 .text-caption {
-  font: 500 v.$fs-caption fonts.$serif-normal;
+  font: 500 var(--fs-caption) fonts.$serif-normal;
 }
 
 .text-intro {
-  font: 500 v.$fs-m-large fonts.$sans;
+  font: 500 var(--fs-intro) fonts.$sans;
   line-height: 1.05;
   letter-spacing: -0.03em;
   word-spacing: normal;
-  margin-bottom: v.$s-m;
+  margin-bottom: var(--gap-main);
 }
 
 .text-intro--large {
-  // font: 500 v.$fs-heading font.$sans;
-  font-size: v.$fs-heading;
+  font-size: var(--fs-display);
   line-height: 0.95;
   letter-spacing: -0.04em;
+
+  @include u.responsive(one-column) {
+    font: 500 var(--fs-about) fonts.$sans;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    word-spacing: normal;
+    text-align: center;
+  }
 }
 
 .text-highlight {
@@ -104,7 +131,7 @@ body {
   font: 700 0.9em fonts.$serif;
   letter-spacing: normal;
   font-style: normal;
-  margin: 0 v.$s-xs;
+  margin: 0 0.15em;
   transform: translateY(-0.05em);
 }
 
@@ -138,4 +165,13 @@ svg {
 // TYPE UTILITIES
 .text-align-left {
   text-align: left;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+  // wrap the stories' titles in nav
+  // don't wrap for smaller screen
+  @media (min-width: 820px) and (max-width: 1255px) {
+    white-space: normal;
+  }
 }
