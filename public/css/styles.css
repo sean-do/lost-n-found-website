@@ -687,6 +687,12 @@ svg .text-highlight-fill {
   justify-content: end;
   align-items: stretch;
 }
+@media (max-height: 800px) {
+  .contribute .container-main__body {
+    margin-top: var(--pd-body);
+    justify-content: start;
+  }
+}
 @media (max-width: 820px) {
   .contribute .container-main__title, .contribute .container-main__body {
     height: fit-content;
@@ -999,12 +1005,12 @@ body {
 html.grayscale body {
   --cl-text-body: #4e4e4e;
   --cl-bg: white;
-  --cl-stroke: #eaeaea;
+  --cl-stroke: #dedede;
   --cl-text-highlight: #4e4e4e;
 }
 html.grayscale body img,
 html.grayscale body video {
-  filter: grayscale(100%) brightness(0.8) contrast(1.5);
+  filter: grayscale(100%) brightness(0.85) contrast(1.5);
 }
 html.grayscale body .colour-toggle__button.toggle-colour:hover img {
   filter: none;

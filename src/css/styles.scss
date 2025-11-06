@@ -32,11 +32,11 @@ body {
 html.grayscale body {
   --cl-text-body: #4e4e4e;
   --cl-bg: white;
-  --cl-stroke: #eaeaea;
+  --cl-stroke: #dedede;
   --cl-text-highlight: #4e4e4e;
   img,
   video {
-    filter: grayscale(100%) brightness(0.8) contrast(1.5);
+    filter: grayscale(100%) brightness(0.85) contrast(1.5);
   }
 
   .colour-toggle__button {
