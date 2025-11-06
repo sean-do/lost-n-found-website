@@ -687,9 +687,9 @@ svg .text-highlight-fill {
   justify-content: end;
   align-items: stretch;
 }
-@media (max-height: 800px) {
+@media (max-height: 650px) {
   .contribute .container-main__body {
-    margin-top: var(--pd-body);
+    padding: var(--pd-body);
     justify-content: start;
   }
 }

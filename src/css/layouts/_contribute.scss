@@ -14,9 +14,9 @@
     @include u.flex(column, 0, end);
   }
 
-  @media (max-height: 800px) {
+  @media (max-height: 650px) {
     &__body {
-      margin-top: var(--pd-body);
+      padding: var(--pd-body);
       justify-content: start;
     }
   }
