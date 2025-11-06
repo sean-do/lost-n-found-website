@@ -44,12 +44,22 @@ layout: "base.html"
     </p>
   </div>
   <p>
-    If you have any questions, contact me at
-    <a><u>seando.design@gmail.com</u></a>
+    If you have any questions, contact me at: <br />
+    <a class="link-inline">seando.design@gmail.com</a>
   </p>
 </div>
 <div class="container-main__body">
-  <form class="form">
+  <form
+    class="form"
+    name="contribute"
+    method="POST"
+    action="/thank-you"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+  >
+    <div style="display:none">
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </div>
     <h2>JOIN THE CONVERSATION</h2>
 
     <div class="form__group">
@@ -76,16 +86,16 @@ layout: "base.html"
       <legend>Preferred Format</legend>
 
       <div class="radio-group">
-        <input type="radio" id="essay" name="format" />
+        <input type="radio" id="essay" name="format" value="Essay" />
         <label for="essay">{% highlight "Essay", "text-body" %}</label>
 
-        <input type="radio" id="story" name="format" />
-        <label for="story">{% highlight "Short Story", "text-body" %}</label>
+        <input type="radio" id="story" name="format" value="Story" />
+        <label for="story">{% highlight "Story", "text-body" %}</label>
 
-        <input type="radio" id="interview" name="format" />
+        <input type="radio" id="interview" name="format" value="Interview" />
         <label for="interview">{% highlight "Interview", "text-body" %}</label>
 
-        <input type="radio" id="other" name="format" />
+        <input type="radio" id="other" name="format" value="Other" />
         <label for="other">{% highlight "Other", "text-body" %}</label>
       </div>
 

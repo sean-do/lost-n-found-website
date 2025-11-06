@@ -46,12 +46,12 @@
         class="nav-links__link "
         ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-8zwasei" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-x5ngk1m" x="50%" y="100%" text-anchor="middle">
        Home
       </text>
     </defs>
-    <use href="#highlightText-8zwasei" class="text-highlight-stroke" />
-    <use href="#highlightText-8zwasei" class="text-highlight-fill" />
+    <use href="#highlightText-x5ngk1m" class="text-highlight-stroke" />
+    <use href="#highlightText-x5ngk1m" class="text-highlight-fill" />
   </svg></a
       >
     </li>
@@ -63,12 +63,12 @@
       >
         <svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 4ch">
     <defs>
-      <text id="highlightText-pdzeqip" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-3q5yf15" x="50%" y="100%" text-anchor="middle">
        Read
       </text>
     </defs>
-    <use href="#highlightText-pdzeqip" class="text-highlight-stroke" />
-    <use href="#highlightText-pdzeqip" class="text-highlight-fill" />
+    <use href="#highlightText-3q5yf15" class="text-highlight-stroke" />
+    <use href="#highlightText-3q5yf15" class="text-highlight-fill" />
   </svg>
       </a>
     </li>
@@ -79,12 +79,12 @@
         class="nav-links__link active"
         ><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 10ch">
     <defs>
-      <text id="highlightText-ck7xl5e" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-tcwoql8" x="50%" y="100%" text-anchor="middle">
        Contribute
       </text>
     </defs>
-    <use href="#highlightText-ck7xl5e" class="text-highlight-stroke" />
-    <use href="#highlightText-ck7xl5e" class="text-highlight-fill" />
+    <use href="#highlightText-tcwoql8" class="text-highlight-stroke" />
+    <use href="#highlightText-tcwoql8" class="text-highlight-fill" />
   </svg></a
       >
     </li>
@@ -228,12 +228,22 @@
     </p>
   </div>
   <p>
-    If you have any questions, contact me at
-    <a><u>seando.design@gmail.com</u></a>
+    If you have any questions, contact me at: <br />
+    <a class="link-inline">seando.design@gmail.com</a>
   </p>
 </div>
 <div class="container-main__body">
-  <form class="form">
+  <form
+    class="form"
+    name="contribute"
+    method="POST"
+    action="/thank-you"
+    netlify-honeypot="bot-field"
+    data-netlify="true"
+  >
+    <div style="display:none">
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </div>
     <h2>JOIN THE CONVERSATION</h2>
 
     <div class="form__group">
@@ -260,48 +270,48 @@
       <legend>Preferred Format</legend>
 
       <div class="radio-group">
-        <input type="radio" id="essay" name="format" />
+        <input type="radio" id="essay" name="format" value="Essay" />
         <label for="essay"><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 5ch">
     <defs>
-      <text id="highlightText-v5i1x44" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-se4gtdr" x="50%" y="100%" text-anchor="middle">
        Essay
       </text>
     </defs>
-    <use href="#highlightText-v5i1x44" class="text-highlight-stroke" />
-    <use href="#highlightText-v5i1x44" class="text-highlight-fill" />
+    <use href="#highlightText-se4gtdr" class="text-highlight-stroke" />
+    <use href="#highlightText-se4gtdr" class="text-highlight-fill" />
   </svg></label>
 
-        <input type="radio" id="story" name="format" />
-        <label for="story"><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 11ch">
+        <input type="radio" id="story" name="format" value="Story" />
+        <label for="story"><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 5ch">
     <defs>
-      <text id="highlightText-g373gcx" x="50%" y="100%" text-anchor="middle">
-       Short Story
+      <text id="highlightText-hkpsq1e" x="50%" y="100%" text-anchor="middle">
+       Story
       </text>
     </defs>
-    <use href="#highlightText-g373gcx" class="text-highlight-stroke" />
-    <use href="#highlightText-g373gcx" class="text-highlight-fill" />
+    <use href="#highlightText-hkpsq1e" class="text-highlight-stroke" />
+    <use href="#highlightText-hkpsq1e" class="text-highlight-fill" />
   </svg></label>
 
-        <input type="radio" id="interview" name="format" />
+        <input type="radio" id="interview" name="format" value="Interview" />
         <label for="interview"><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 9ch">
     <defs>
-      <text id="highlightText-t5e6ejx" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-dadfmvo" x="50%" y="100%" text-anchor="middle">
        Interview
       </text>
     </defs>
-    <use href="#highlightText-t5e6ejx" class="text-highlight-stroke" />
-    <use href="#highlightText-t5e6ejx" class="text-highlight-fill" />
+    <use href="#highlightText-dadfmvo" class="text-highlight-stroke" />
+    <use href="#highlightText-dadfmvo" class="text-highlight-fill" />
   </svg></label>
 
-        <input type="radio" id="other" name="format" />
+        <input type="radio" id="other" name="format" value="Other" />
         <label for="other"><svg class="text-body" style="vertical-align: baseline; height: 0.5em; width: 5ch">
     <defs>
-      <text id="highlightText-ap8haqi" x="50%" y="100%" text-anchor="middle">
+      <text id="highlightText-1nvtkdx" x="50%" y="100%" text-anchor="middle">
        Other
       </text>
     </defs>
-    <use href="#highlightText-ap8haqi" class="text-highlight-stroke" />
-    <use href="#highlightText-ap8haqi" class="text-highlight-fill" />
+    <use href="#highlightText-1nvtkdx" class="text-highlight-stroke" />
+    <use href="#highlightText-1nvtkdx" class="text-highlight-fill" />
   </svg></label>
       </div>
 

@@ -1,0 +1,21 @@
+@use "../tokens" as v;
+@use "../utilities" as u;
+
+.container-form-success {
+  width: 75%;
+  @include u.flex(column, var(--gap-main), center, center);
+  text-align: center;
+
+  @include u.responsive(collapse) {
+    width: 100%;
+    height: var(--content-height);
+  }
+
+  > * {
+    width: 50%;
+    @include u.responsive(one-column) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
